@@ -1,8 +1,8 @@
 # Sara Alert FHIR Client App
 
-This simple example application written in the Ruby programming language illustrates how to authenticate and use the Sara Alert FHIR API, using the M2M workflow.
+This simple example application written in the Ruby programming language illustrates how to authenticate and use the Sara Alert FHIR API, using the SMART-on-FHIR Backend Services Workflow.
 
-First, follow the directions in the [wiki walk-through](https://github.com/SaraAlert/saraalert-fhir-ig/wiki/M2M-Walk-Through) to register your application.
+First, follow the directions in the [wiki walk-through](https://github.com/SaraAlert/saraalert-fhir-ig/wiki/Step-by-Step-Instructions-For-Local-Testing:-SMART-on-FHIR-Backend-Services-Workflow) to register your application.
 
 Second, save the PEM file from Step #3 in the walk-through to `private.pem` (the existing file in this repository is only a placeholder).
 
