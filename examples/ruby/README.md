@@ -6,6 +6,13 @@ First, follow the directions in the [wiki walk-through](https://github.com/SaraA
 
 Second, save the PEM file from Step #3 in the walk-through to `private.pem` (the existing file in this repository is only a placeholder).
 
+Third, replace the following lines in `app.rb` with your client ID and KID (the client ID was set during registration in Step #4 and the KID can be obtained from the public key in Step #3):
+
+```ruby
+CLIENT_ID = 'testApp'
+KID = '0sE1L26Y6vuHzDt2G3TzotGQg6w='
+```
+
 Third, after installing the dependency (using `bundle install`) execute the script:
 
 ```
