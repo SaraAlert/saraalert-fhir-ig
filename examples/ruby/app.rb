@@ -46,7 +46,7 @@ parameters = {
   'client_assertion' => client_assertion,
   'client_assertion_type' => 'urn:ietf:params:oauth:client-assertion-type:jwt-bearer',
   'grant_type' => 'client_credentials',
-  'scope' => 'system/*.*'
+  'scope' => 'system/Patient.* system/Observation.read system/QuestionnaireResponse.read'
 }
 puts "PARAMETERS:\n#{parameters.to_json}"
 puts '---------------------'
