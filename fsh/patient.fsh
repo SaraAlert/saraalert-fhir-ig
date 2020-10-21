@@ -8,6 +8,7 @@ Title: "Sara Alert Patient Profile"
 Description: "Sara Alert outputs additional extensions on Patient resources"
 * extension contains 
   preferred-contact-method named preferred-contact-method 0..1 MS and
+  preferred-contact-time named preferred-contact-time 0..1 MS and
   symptom-onset-date named symptom-onset-date 0..1 MS and
   last-exposure-date named last-exposure-date 0..1 MS and
   isolation named isolation 0..1 MS
@@ -23,6 +24,13 @@ Extension: PreferredContactMethod
 Id: preferred-contact-method
 Title: "Preferred Contact Method"
 Description: "The monitorees Sara Alert preferred contact method (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`)."
+* value[x] only string
+
+// Preferred Contact Time Extension
+Extension: PreferredContactTime
+Id: preferred-contact-time
+Title: "Preferred Contact Time"
+Description: "The monitorees Sara Alert preferred contact time (options are: `Morning`, `Afternoon`, `Evening`)."
 * value[x] only string
 
 // Symptom Onset Date Extension
