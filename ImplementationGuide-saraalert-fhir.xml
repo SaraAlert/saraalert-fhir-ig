@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2020-07-01T21:38:16-04:00"/>
+  <date value="2020-11-02T13:16:01-05:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -245,6 +245,20 @@
       </reference>
       <name value="Preferred Contact Method"/>
       <description value="The monitorees Sara Alert preferred contact method (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-preferred-contact-time.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/preferred-contact-time"/>
+      </reference>
+      <name value="Preferred Contact Time"/>
+      <description value="The monitorees Sara Alert preferred contact time (options are: `Morning`, `Afternoon`, `Evening`)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

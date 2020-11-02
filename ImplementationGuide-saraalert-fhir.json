@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2020-07-01T21:38:16-04:00",
+  "date": "2020-11-02T13:16:01-05:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -366,6 +366,24 @@
         },
         "name": "Preferred Contact Method",
         "description": "The monitorees Sara Alert preferred contact method (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-preferred-contact-time.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/preferred-contact-time"
+        },
+        "name": "Preferred Contact Time",
+        "description": "The monitorees Sara Alert preferred contact time (options are: `Morning`, `Afternoon`, `Evening`).",
         "exampleBoolean": false
       },
       {

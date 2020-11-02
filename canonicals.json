@@ -1,0 +1,65 @@
+[
+  {
+    "url": "http://saraalert.org/ImplementationGuide/saraalert-fhir",
+    "id": "saraalert-fhir",
+    "type": "ImplementationGuide",
+    "version": "1.0.0",
+    "name": "SaraAlert"
+  },
+  {
+    "url": "http://saraalert.org/StructureDefinition/isolation",
+    "id": "isolation",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "Isolation"
+  },
+  {
+    "url": "http://saraalert.org/StructureDefinition/last-exposure-date",
+    "id": "last-exposure-date",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "LastExposureDate"
+  },
+  {
+    "url": "http://saraalert.org/StructureDefinition/preferred-contact-method",
+    "id": "preferred-contact-method",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "PreferredContactMethod"
+  },
+  {
+    "url": "http://saraalert.org/StructureDefinition/preferred-contact-time",
+    "id": "preferred-contact-time",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "PreferredContactTime"
+  },
+  {
+    "url": "http://saraalert.org/StructureDefinition/sara-alert-observation",
+    "id": "sara-alert-observation",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "SaraAlertObservation"
+  },
+  {
+    "url": "http://saraalert.org/StructureDefinition/sara-alert-patient",
+    "id": "sara-alert-patient",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "SaraAlertPatient"
+  },
+  {
+    "url": "http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response",
+    "id": "sara-alert-questionnaire-response",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "SaraAlertQuestionnaireResponse"
+  },
+  {
+    "url": "http://saraalert.org/StructureDefinition/symptom-onset-date",
+    "id": "symptom-onset-date",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "SymptomOnsetDate"
+  }
+]
