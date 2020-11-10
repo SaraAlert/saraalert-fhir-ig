@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2020-11-02T13:16:01-05:00",
+  "date": "2020-11-10T10:17:16-05:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -312,6 +312,24 @@
         },
         "name": "Sara Alert QuestionnaireResponse Profile",
         "description": "The Sara Alert QuestionnaireResponse profile represents a monitoree daily report.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-full-assigned-jurisdiction-path.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/full-assigned-jurisdiction-path"
+        },
+        "name": "Full Assigned Jurisdiction Path",
+        "description": "Represents the jurisdiction in which this monitoree is enrolled.",
         "exampleBoolean": false
       },
       {

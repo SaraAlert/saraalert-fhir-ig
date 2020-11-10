@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "SaraAlert"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-11-02T13:16:01-05:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-11-10T10:17:16-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The MITRE Corporation"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -312,6 +312,24 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-full-assigned-jurisdiction-path.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/full-assigned-jurisdiction-path" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Full Assigned Jurisdiction Path" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the jurisdiction in which this monitoree is enrolled." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-isolation.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -322,7 +340,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "If the monitoree should be in the isolation workflow (omitting this extension defaults this value to false, leaving the monitoree in the exposure workflow." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -340,7 +358,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "When the monitoree's last exposure occurred for use in the Sara Alert exposure workflow." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -358,7 +376,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The monitorees Sara Alert preferred contact method (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -376,7 +394,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The monitorees Sara Alert preferred contact time (options are: `Morning`, `Afternoon`, `Evening`)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

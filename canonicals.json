@@ -7,6 +7,13 @@
     "name": "SaraAlert"
   },
   {
+    "url": "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path",
+    "id": "full-assigned-jurisdiction-path",
+    "type": "StructureDefinition",
+    "version": "1.0.0",
+    "name": "FullAssignedJurisdictionPath"
+  },
+  {
     "url": "http://saraalert.org/StructureDefinition/isolation",
     "id": "isolation",
     "type": "StructureDefinition",

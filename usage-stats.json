@@ -4,6 +4,13 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path",
+      "title": "Full Assigned Jurisdiction Path",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/isolation",
       "title": "Isolation",
       "types": [
@@ -109,6 +116,9 @@
       "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path": [
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/isolation": [

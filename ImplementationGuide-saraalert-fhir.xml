@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2020-11-02T13:16:01-05:00"/>
+  <date value="2020-11-10T10:17:16-05:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -203,6 +203,20 @@
       </reference>
       <name value="Sara Alert QuestionnaireResponse Profile"/>
       <description value="The Sara Alert QuestionnaireResponse profile represents a monitoree daily report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-full-assigned-jurisdiction-path.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/full-assigned-jurisdiction-path"/>
+      </reference>
+      <name value="Full Assigned Jurisdiction Path"/>
+      <description value="Represents the jurisdiction in which this monitoree is enrolled."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
