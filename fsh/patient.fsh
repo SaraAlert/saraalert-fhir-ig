@@ -11,7 +11,8 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   preferred-contact-time named preferred-contact-time 0..1 MS and
   symptom-onset-date named symptom-onset-date 0..1 MS and
   last-exposure-date named last-exposure-date 0..1 MS and
-  isolation named isolation 0..1 MS
+  isolation named isolation 0..1 MS and
+  full-assigned-jurisdiction-path named full-assigned-jurisdiction-path 0..1 MS
 * active MS
 * name MS
 * telecom MS
@@ -53,3 +54,10 @@ Id: isolation
 Title: "Isolation"
 Description: "If the monitoree should be in the isolation workflow (omitting this extension defaults this value to false, leaving the monitoree in the exposure workflow."
 * value[x] only boolean
+
+// Full Assigned Jurisdiction Path
+Extension: FullAssignedJurisdictionPath
+Id: full-assigned-jurisdiction-path
+Title: "Full Assigned Jurisdiction Path"
+Description: "Represents the jurisdiction in which this monitoree is enrolled."
+* value[x] only string
