@@ -10,19 +10,19 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   preferred-contact-method named preferred-contact-method 0..1 MS and
   preferred-contact-time named preferred-contact-time 0..1 MS and
   symptom-onset-date named symptom-onset-date 0..1 MS and
-  last-exposure-date named last-exposure-date 0..1 MS and
+  last-date-of-exposure named last-date-of-exposure 0..1 MS and
   isolation named isolation 0..1 MS and
   full-assigned-jurisdiction-path named full-assigned-jurisdiction-path 0..1 MS and
   monitoring-plan named monitoring-plan 0..1 MS and
   assigned-user named assigned-user 0..1 MS and
   additional-planned-travel-start-date named additional-planned-travel-start-date 0..1 MS and
   port-of-origin named port-of-origin 0..1 MS and
-  departure-date named departure-date 0..1 MS and
+  date-of-departure named date-of-departure 0..1 MS and
   flight-or-vessel-number named flight-or-vessel-number 0..1 MS and
   flight-or-vessel-carrier named flight-or-vessel-carrier 0..1 MS and
-  arrival-date named arrival-date 0..1 MS and
+  date-of-arrival named date-of-arrival 0..1 MS and
   exposure-notes named exposure-notes 0..1 MS and
-  travel-notes named travel-notes 0..1 MS and
+  travel-related-notes named travel-related-notes 0..1 MS and
   additional-planned-travel-notes named additional-planned-travel-notes 0..1 MS
 * telecom.extension contains phone-type named phone-type 0..1 MS
 * active MS
@@ -53,10 +53,10 @@ Title: "Symptom Onset Date"
 Description: "When the monitoree`s first symptoms appeared for use in the Sara Alert isolation workflow."
 * value[x] only date
 
-// Last Exposure Date Extension
-Extension: LastExposureDate
-Id: last-exposure-date
-Title: "Last Exposure Date"
+// Last Date of Exposure Extension
+Extension: LastDateOfExposure
+Id: last-date-of-exposure
+Title: "Last Date of Exposure"
 Description: "When the monitoree`s last exposure occurred for use in the Sara Alert exposure workflow."
 * value[x] only date
 
@@ -102,10 +102,10 @@ Title: "Port of Origin"
 Description: "Represents the airport, station, or docking point that the monitoree traveled from."
 * value[x] only string
 
-// Departure Date
-Extension: DepartureDate
-Id: departure-date
-Title: "Departure Date"
+// Date of Departure
+Extension: DateOfDeparture
+Id: date-of-departure
+Title: "Date of Departure"
 Description: "Represents the date that the monitoree traveled from the Port of Origin to the United States."
 * value[x] only date
 
@@ -123,10 +123,10 @@ Title: "Flight or Vessel Carrier"
 Description: "Represents the carrier, operating company, or provider of the flight or vessel."
 * value[x] only string
 
-// Arrival Date
-Extension: ArrivalDate
-Id: arrival-date
-Title: "Arrival Date"
+// Date of Arrival
+Extension: DateOfArrival
+Id: date-of-arrival
+Title: "Date of Arrival"
 Description: "Represents when the monitoree entered the United States after travel."
 * value[x] only date
 
@@ -137,10 +137,10 @@ Title: "Exposure Notes"
 Description: "Represents any additional notes about the monitoree’s exposure history or case information history. This can include details about the interaction with a known case, high risk activities, common exposure, etc."
 * value[x] only string
 
-// Travel Notes
-Extension: TravelNotes
-Id: travel-notes
-Title: "Travel Notes"
+// Travel Related Notes
+Extension: TravelRelatedNotes
+Id: travel-related-notes
+Title: "Travel Related Notes"
 Description: "Represents any additional notes about the monitoree’s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc."
 * value[x] only string
 
