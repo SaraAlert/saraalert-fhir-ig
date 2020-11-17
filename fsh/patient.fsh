@@ -86,7 +86,7 @@ Extension: AssignedUser
 Id: assigned-user
 Title: "Assigned User"
 Description: "Represents the user or group within a jurisdiction responsible for monitoring a monitoree."
-* value[x] only string
+* value[x] only positiveInt
 
 // Additional Planned Travel Start Date
 Extension: AdditionalPlannedTravelStartDate
