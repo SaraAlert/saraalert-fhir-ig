@@ -31,6 +31,12 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * birthDate MS
 * address MS
 * communication MS
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slice to distinguish identifiers"
+* identifier contains StateLocalId 0..1 MS
+* identifier[StateLocalId].system = "http://saraalert.org/SaraAlert/state-local-id"
 
 // Preferred Contact Method Extension
 Extension: PreferredContactMethod
