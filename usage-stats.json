@@ -4,6 +4,62 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-notes",
+      "title": "Additional Planned Travel Notes",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-start-date",
+      "title": "Additional Planned Travel Start Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/assigned-user",
+      "title": "Assigned User",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/date-of-arrival",
+      "title": "Date of Arrival",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/date-of-departure",
+      "title": "Date of Departure",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/exposure-notes",
+      "title": "Exposure Notes",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/flight-or-vessel-carrier",
+      "title": "Flight or Vessel Carrier",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/flight-or-vessel-number",
+      "title": "Flight or Vessel Number",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path",
       "title": "Full Assigned Jurisdiction Path",
       "types": [
@@ -18,10 +74,31 @@
       ]
     },
     {
-      "url": "http://saraalert.org/StructureDefinition/last-exposure-date",
-      "title": "Last Exposure Date",
+      "url": "http://saraalert.org/StructureDefinition/last-date-of-exposure",
+      "title": "Last Date of Exposure",
       "types": [
         "date"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/monitoring-plan",
+      "title": "Monitoring Plan",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/phone-type",
+      "title": "Phone Type",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/port-of-origin",
+      "title": "Port of Origin",
+      "types": [
+        "string"
       ]
     },
     {
@@ -43,6 +120,13 @@
       "title": "Symptom Onset Date",
       "types": [
         "date"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/travel-related-notes",
+      "title": "Travel Related Notes",
+      "types": [
+        "string"
       ]
     }
   ],
@@ -118,13 +202,46 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
+    "http://saraalert.org/StructureDefinition/additional-planned-travel-notes": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/additional-planned-travel-start-date": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/assigned-user": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/date-of-arrival": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/date-of-departure": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/exposure-notes": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/flight-or-vessel-carrier": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/flight-or-vessel-number": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path": [
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/isolation": [
       "Patient"
     ],
-    "http://saraalert.org/StructureDefinition/last-exposure-date": [
+    "http://saraalert.org/StructureDefinition/last-date-of-exposure": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/monitoring-plan": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/phone-type": [
+      "Patient.telecom"
+    ],
+    "http://saraalert.org/StructureDefinition/port-of-origin": [
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/preferred-contact-method": [
@@ -134,6 +251,9 @@
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/symptom-onset-date": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/travel-related-notes": [
       "Patient"
     ]
   }

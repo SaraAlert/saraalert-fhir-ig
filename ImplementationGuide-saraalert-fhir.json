@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2020-11-10T10:17:16-05:00",
+  "date": "2021-01-12T12:19:18-05:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -119,6 +119,32 @@
         "extension": [
           {
             "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
             "valueString": "path-qa"
           },
           {
@@ -163,6 +189,19 @@
           {
             "url": "value",
             "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "http://saraalert.org/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -265,10 +304,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-sara-alert-observation.html"
           }
         ],
         "reference": {
@@ -283,10 +318,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-sara-alert-patient.html"
           }
         ],
         "reference": {
@@ -301,10 +332,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-sara-alert-questionnaire-response.html"
           }
         ],
         "reference": {
@@ -319,10 +346,118 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
-          },
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/additional-planned-travel-notes"
+        },
+        "name": "Additional Planned Travel Notes",
+        "description": "Represents any additional notes about the monitoree’s planned travel. This can include details about the nature of the trip, planned social interaction, additional destinations, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-full-assigned-jurisdiction-path.html"
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/additional-planned-travel-start-date"
+        },
+        "name": "Additional Planned Travel Start Date",
+        "description": "Represents the date that the monitoree is planning to begin their additional travel.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/assigned-user"
+        },
+        "name": "Assigned User",
+        "description": "Represents the user or group within a jurisdiction responsible for monitoring a monitoree.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/date-of-arrival"
+        },
+        "name": "Date of Arrival",
+        "description": "Represents when the monitoree entered the United States after travel.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/date-of-departure"
+        },
+        "name": "Date of Departure",
+        "description": "Represents the date that the monitoree traveled from the Port of Origin to the United States.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/exposure-notes"
+        },
+        "name": "Exposure Notes",
+        "description": "Represents any additional notes about the monitoree’s exposure history or case information history. This can include details about the interaction with a known case, high risk activities, common exposure, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/flight-or-vessel-carrier"
+        },
+        "name": "Flight or Vessel Carrier",
+        "description": "Represents the carrier, operating company, or provider of the flight or vessel.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/flight-or-vessel-number"
+        },
+        "name": "Flight or Vessel Number",
+        "description": "Represents the plane, train, ship, or other vessel that the monitoree used to travel to their destination.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
@@ -337,10 +472,6 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-isolation.html"
           }
         ],
         "reference": {
@@ -355,17 +486,13 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-last-exposure-date.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/last-exposure-date"
+          "reference": "StructureDefinition/last-date-of-exposure"
         },
-        "name": "Last Exposure Date",
-        "description": "When the monitoree's last exposure occurred for use in the Sara Alert exposure workflow.",
+        "name": "Last Date of Exposure",
+        "description": "When the monitoree`s last exposure occurred for use in the Sara Alert exposure workflow.",
         "exampleBoolean": false
       },
       {
@@ -373,17 +500,55 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
-          },
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/monitoring-plan"
+        },
+        "name": "Monitoring Plan",
+        "description": "Represents the monitoring approach selected by public health based on CDC or local guidance (options are: `None`, `Daily active monitoring`, `Self-monitoring with public health supervision`, `Self-monitoring with delegated supervision`, `Self-observation`).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-preferred-contact-method.html"
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/phone-type"
+        },
+        "name": "Phone Type",
+        "description": "Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/port-of-origin"
+        },
+        "name": "Port of Origin",
+        "description": "Represents the airport, station, or docking point that the monitoree traveled from.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
           }
         ],
         "reference": {
           "reference": "StructureDefinition/preferred-contact-method"
         },
         "name": "Preferred Contact Method",
-        "description": "The monitorees Sara Alert preferred contact method (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`).",
+        "description": "Represents the form in which the monitoree receives their daily symptom reports (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`).",
         "exampleBoolean": false
       },
       {
@@ -391,17 +556,13 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-preferred-contact-time.html"
           }
         ],
         "reference": {
           "reference": "StructureDefinition/preferred-contact-time"
         },
         "name": "Preferred Contact Time",
-        "description": "The monitorees Sara Alert preferred contact time (options are: `Morning`, `Afternoon`, `Evening`).",
+        "description": "Represents the time period that the system sends out symptom reports to a monitoree (options are: `Morning`, `Afternoon`, `Evening`).",
         "exampleBoolean": false
       },
       {
@@ -409,17 +570,27 @@
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "StructureDefinition-symptom-onset-date.html"
           }
         ],
         "reference": {
           "reference": "StructureDefinition/symptom-onset-date"
         },
         "name": "Symptom Onset Date",
-        "description": "When the monitoree's first symptoms appeared for use in the Sara Alert isolation workflow.",
+        "description": "When the monitoree`s first symptoms appeared for use in the Sara Alert isolation workflow.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/travel-related-notes"
+        },
+        "name": "Travel Related Notes",
+        "description": "Represents any additional notes about the monitoree’s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc.",
         "exampleBoolean": false
       }
     ],
@@ -467,6 +638,22 @@
       {
         "code": "path-resource",
         "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
       },
       {
         "code": "path-pages",

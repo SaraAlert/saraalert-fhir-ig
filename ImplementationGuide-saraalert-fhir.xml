@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2020-11-10T10:17:16-05:00"/>
+  <date value="2021-01-12T12:19:18-05:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -77,6 +77,22 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="path-qa"/>
       </extension>
       <extension url="value">
@@ -105,6 +121,14 @@
       </extension>
       <extension url="value">
         <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://saraalert.org/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -167,9 +191,6 @@
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sara-alert-observation.html"/>
-      </extension>
       <reference>
         <reference value="StructureDefinition/sara-alert-observation"/>
       </reference>
@@ -180,9 +201,6 @@
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sara-alert-patient.html"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/sara-alert-patient"/>
@@ -195,9 +213,6 @@
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-sara-alert-questionnaire-response.html"/>
-      </extension>
       <reference>
         <reference value="StructureDefinition/sara-alert-questionnaire-response"/>
       </reference>
@@ -209,8 +224,93 @@
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-full-assigned-jurisdiction-path.html"/>
+      <reference>
+        <reference value="StructureDefinition/additional-planned-travel-notes"/>
+      </reference>
+      <name value="Additional Planned Travel Notes"/>
+      <description value="Represents any additional notes about the monitoree&#x2019;s planned travel. This can include details about the nature of the trip, planned social interaction, additional destinations, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/additional-planned-travel-start-date"/>
+      </reference>
+      <name value="Additional Planned Travel Start Date"/>
+      <description value="Represents the date that the monitoree is planning to begin their additional travel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/assigned-user"/>
+      </reference>
+      <name value="Assigned User"/>
+      <description value="Represents the user or group within a jurisdiction responsible for monitoring a monitoree."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/date-of-arrival"/>
+      </reference>
+      <name value="Date of Arrival"/>
+      <description value="Represents when the monitoree entered the United States after travel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/date-of-departure"/>
+      </reference>
+      <name value="Date of Departure"/>
+      <description value="Represents the date that the monitoree traveled from the Port of Origin to the United States."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/exposure-notes"/>
+      </reference>
+      <name value="Exposure Notes"/>
+      <description value="Represents any additional notes about the monitoree&#x2019;s exposure history or case information history. This can include details about the interaction with a known case, high risk activities, common exposure, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/flight-or-vessel-carrier"/>
+      </reference>
+      <name value="Flight or Vessel Carrier"/>
+      <description value="Represents the carrier, operating company, or provider of the flight or vessel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/flight-or-vessel-number"/>
+      </reference>
+      <name value="Flight or Vessel Number"/>
+      <description value="Represents the plane, train, ship, or other vessel that the monitoree used to travel to their destination."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/full-assigned-jurisdiction-path"/>
@@ -223,9 +323,6 @@
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-isolation.html"/>
-      </extension>
       <reference>
         <reference value="StructureDefinition/isolation"/>
       </reference>
@@ -237,56 +334,88 @@
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-last-exposure-date.html"/>
-      </extension>
       <reference>
-        <reference value="StructureDefinition/last-exposure-date"/>
+        <reference value="StructureDefinition/last-date-of-exposure"/>
       </reference>
-      <name value="Last Exposure Date"/>
-      <description value="When the monitoree&#39;s last exposure occurred for use in the Sara Alert exposure workflow."/>
+      <name value="Last Date of Exposure"/>
+      <description value="When the monitoree`s last exposure occurred for use in the Sara Alert exposure workflow."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-preferred-contact-method.html"/>
+      <reference>
+        <reference value="StructureDefinition/monitoring-plan"/>
+      </reference>
+      <name value="Monitoring Plan"/>
+      <description value="Represents the monitoring approach selected by public health based on CDC or local guidance (options are: `None`, `Daily active monitoring`, `Self-monitoring with public health supervision`, `Self-monitoring with delegated supervision`, `Self-observation`)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/phone-type"/>
+      </reference>
+      <name value="Phone Type"/>
+      <description value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree&#x2019;s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/port-of-origin"/>
+      </reference>
+      <name value="Port of Origin"/>
+      <description value="Represents the airport, station, or docking point that the monitoree traveled from."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/preferred-contact-method"/>
       </reference>
       <name value="Preferred Contact Method"/>
-      <description value="The monitorees Sara Alert preferred contact method (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`)."/>
+      <description value="Represents the form in which the monitoree receives their daily symptom reports (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-preferred-contact-time.html"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/preferred-contact-time"/>
       </reference>
       <name value="Preferred Contact Time"/>
-      <description value="The monitorees Sara Alert preferred contact time (options are: `Morning`, `Afternoon`, `Evening`)."/>
+      <description value="Represents the time period that the system sends out symptom reports to a monitoree (options are: `Morning`, `Afternoon`, `Evening`)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-symptom-onset-date.html"/>
-      </extension>
       <reference>
         <reference value="StructureDefinition/symptom-onset-date"/>
       </reference>
       <name value="Symptom Onset Date"/>
-      <description value="When the monitoree&#39;s first symptoms appeared for use in the Sara Alert isolation workflow."/>
+      <description value="When the monitoree`s first symptoms appeared for use in the Sara Alert isolation workflow."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/travel-related-notes"/>
+      </reference>
+      <name value="Travel Related Notes"/>
+      <description value="Represents any additional notes about the monitoree&#x2019;s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -330,6 +459,22 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 9, info = 0 -->
+<!-- broken links = 6, errors = 1, warn = 21, info = 0 -->
 <head>
   <title>SaraAlert : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,160 +23,426 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SaraAlert</h1>
- <p>Generated Tue Nov 10 10:17:33 EST 2020, FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = <a href="http://saraalert.org">http://saraalert.org</a> (<a href="http://saraalert.org/history.html">history</a>))</p>
-<p style="background-color: #ffcccc">IG Publisher Version: v1.1.0, which is out of date. The current version is ?pub-ver-1? <a href="https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar">Download Latest</a></p>
-<p>No Suppressed Errors</p>
- <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
-
- <p>Realm check:</p> <ul><li>n/a</li></ul>
+ <p>Generated Tue Jan 12 12:19:38 EST 2021, FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = <a href="http://saraalert.org">http://saraalert.org</a> (<a href="http://saraalert.org/history.html">history</a>)). See <a href="/users/nfreiter/dev/sara/saraalert-fhir-ig/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.56</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = saraalert-fhir, Canonical = http://saraalert.org</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>1.0.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/nfreiter/dev/sara/saraalert-fhir-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> saraalert-fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://saraalert.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/nfreiter/dev/sara/saraalert-fhir-ig/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU3.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://saraalert.org (Problem #1 with package-list.json at http://saraalert.org: com.google.gson.JsonNull cannot be cast to com.google.gson.JsonObject)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 6, errors = 1, warn = 21, info = 0</td></tr>
+</table>
  <table class="grid">
    <tr>
-     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>7</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_ImplementationGuide-saraalert-fhir"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_ImplementationGuide-saraalert-fhir"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/ImplementationGuide-saraalert-fhir</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-additional-planned-travel-notes"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-notes</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-full-assigned-jurisdiction-path"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-full-assigned-jurisdiction-path</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-additional-planned-travel-start-date"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-start-date</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-isolation"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-isolation</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-assigned-user"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-assigned-user</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-last-exposure-date"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-last-exposure-date</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-date-of-arrival"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-arrival</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-preferred-contact-method"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-preferred-contact-method</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-date-of-departure"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-departure</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-preferred-contact-time"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-preferred-contact-time</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-exposure-notes"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-exposure-notes</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-symptom-onset-date"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-symptom-onset-date</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-flight-or-vessel-carrier"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-flight-or-vessel-carrier</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_profiles_StructureDefinition-sara-alert-observation"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/profiles/StructureDefinition-sara-alert-observation</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-flight-or-vessel-number"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-flight-or-vessel-number</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_profiles_StructureDefinition-sara-alert-patient"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/profiles/StructureDefinition-sara-alert-patient</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-full-assigned-jurisdiction-path"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-full-assigned-jurisdiction-path</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_Users_tstrassner_repo_saraalert-fhir-ig_input_profiles_StructureDefinition-sara-alert-questionnaire-response"><b>/Users/tstrassner/repo/saraalert-fhir-ig/input/profiles/StructureDefinition-sara-alert-questionnaire-response</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-isolation"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-isolation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-last-date-of-exposure"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-last-date-of-exposure</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-monitoring-plan"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-monitoring-plan</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-phone-type"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-phone-type</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-port-of-origin"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-port-of-origin</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-preferred-contact-method"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-preferred-contact-method</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-preferred-contact-time"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-preferred-contact-time</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-sara-alert-observation"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-observation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-sara-alert-patient"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-patient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-sara-alert-questionnaire-response"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-questionnaire-response</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-symptom-onset-date"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-symptom-onset-date</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-travel-related-notes"><b>/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-travel-related-notes</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
-</table>
-<hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_ImplementationGuide-saraalert-fhir"> </a>
-<h2><a href="ImplementationGuide-saraalert-fhir.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/ImplementationGuide-saraalert-fhir.json</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition.parameter[26].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file not found</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sara-alert-observation.html#1661eb65-f338-412e-98ae-92498b29e23f">StructureDefinition-sara-alert-observation.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 362, column 1444</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sara-alert-observation.html#b21195a6-41de-429b-9937-a8d46fd00e20">StructureDefinition-sara-alert-observation.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 623, column 1444</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for &quot;referenceRange (Observation)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sara-alert-questionnaire-response.html#6b486736-e859-4393-a12c-63f2b2486b8f">StructureDefinition-sara-alert-questionnaire-response.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 328, column 1528</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sara-alert-questionnaire-response.html#b115c60e-8873-4605-b10f-f9a442144d80">StructureDefinition-sara-alert-questionnaire-response.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 329, column 1406</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sara-alert-questionnaire-response.html#341791db-2d0b-4196-a71a-9958017c2dea">StructureDefinition-sara-alert-questionnaire-response.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 527, column 1528</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-sara-alert-questionnaire-response.html#bd30fcf2-66e6-47e4-801e-872c4be86dae">StructureDefinition-sara-alert-questionnaire-response.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 528, column 1406</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for &quot;item (QuestionnaireResponse)&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-full-assigned-jurisdiction-path"> </a>
-<h2><a href="StructureDefinition-full-assigned-jurisdiction-path.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-full-assigned-jurisdiction-path.json</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-isolation"> </a>
-<h2><a href="StructureDefinition-isolation.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-isolation.json</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/isolation')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-last-exposure-date"> </a>
-<h2><a href="StructureDefinition-last-exposure-date.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-last-exposure-date.json</a></h2>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_ImplementationGuide-saraalert-fhir"> </a>
+<h2><a href="ImplementationGuide-saraalert-fhir.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/last-exposure-date')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/saraalert-fhir: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-preferred-contact-method"> </a>
-<h2><a href="StructureDefinition-preferred-contact-method.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-preferred-contact-method.json</a></h2>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-additional-planned-travel-notes"> </a>
+<h2><a href="StructureDefinition-additional-planned-travel-notes.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-notes.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/additional-planned-travel-notes: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/preferred-contact-method')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/additional-planned-travel-notes')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-preferred-contact-time"> </a>
-<h2><a href="StructureDefinition-preferred-contact-time.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-preferred-contact-time.json</a></h2>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-additional-planned-travel-start-date"> </a>
+<h2><a href="StructureDefinition-additional-planned-travel-start-date.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-start-date.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/additional-planned-travel-start-date: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/preferred-contact-time')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/additional-planned-travel-start-date')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_extensions_StructureDefinition-symptom-onset-date"> </a>
-<h2><a href="StructureDefinition-symptom-onset-date.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/extensions/StructureDefinition-symptom-onset-date.json</a></h2>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-assigned-user"> </a>
+<h2><a href="StructureDefinition-assigned-user.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-assigned-user.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/assigned-user: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/symptom-onset-date')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b></td>
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/assigned-user')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_profiles_StructureDefinition-sara-alert-observation"> </a>
-<h2><a href="StructureDefinition-sara-alert-observation.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/profiles/StructureDefinition-sara-alert-observation.json</a></h2>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-date-of-arrival"> </a>
+<h2><a href="StructureDefinition-date-of-arrival.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-arrival.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/date-of-arrival: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-observation')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/date-of-arrival')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_profiles_StructureDefinition-sara-alert-patient"> </a>
-<h2><a href="StructureDefinition-sara-alert-patient.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/profiles/StructureDefinition-sara-alert-patient.json</a></h2>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-date-of-departure"> </a>
+<h2><a href="StructureDefinition-date-of-departure.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-departure.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/date-of-departure: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-patient')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/date-of-departure')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_Users_tstrassner_repo_saraalert-fhir-ig_input_profiles_StructureDefinition-sara-alert-questionnaire-response"> </a>
-<h2><a href="StructureDefinition-sara-alert-questionnaire-response.html">/Users/tstrassner/repo/saraalert-fhir-ig/input/profiles/StructureDefinition-sara-alert-questionnaire-response.json</a></h2>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-exposure-notes"> </a>
+<h2><a href="StructureDefinition-exposure-notes.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-exposure-notes.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/exposure-notes: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/exposure-notes')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-flight-or-vessel-carrier"> </a>
+<h2><a href="StructureDefinition-flight-or-vessel-carrier.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-flight-or-vessel-carrier.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/flight-or-vessel-carrier: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/flight-or-vessel-carrier')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-flight-or-vessel-number"> </a>
+<h2><a href="StructureDefinition-flight-or-vessel-number.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-flight-or-vessel-number.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/flight-or-vessel-number: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/flight-or-vessel-number')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-full-assigned-jurisdiction-path"> </a>
+<h2><a href="StructureDefinition-full-assigned-jurisdiction-path.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-full-assigned-jurisdiction-path.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/full-assigned-jurisdiction-path: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-isolation"> </a>
+<h2><a href="StructureDefinition-isolation.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-isolation.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/isolation: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/isolation')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-last-date-of-exposure"> </a>
+<h2><a href="StructureDefinition-last-date-of-exposure.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-last-date-of-exposure.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/last-date-of-exposure: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/last-date-of-exposure')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-monitoring-plan"> </a>
+<h2><a href="StructureDefinition-monitoring-plan.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-monitoring-plan.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/monitoring-plan: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/monitoring-plan')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-phone-type"> </a>
+<h2><a href="StructureDefinition-phone-type.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-phone-type.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/phone-type: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/phone-type')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-port-of-origin"> </a>
+<h2><a href="StructureDefinition-port-of-origin.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-port-of-origin.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/port-of-origin: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/port-of-origin')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-preferred-contact-method"> </a>
+<h2><a href="StructureDefinition-preferred-contact-method.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-preferred-contact-method.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/preferred-contact-method: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/preferred-contact-method')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-preferred-contact-time"> </a>
+<h2><a href="StructureDefinition-preferred-contact-time.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-preferred-contact-time.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/preferred-contact-time: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/preferred-contact-time')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-sara-alert-observation"> </a>
+<h2><a href="StructureDefinition-sara-alert-observation.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-observation.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/sara-alert-observation: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-observation')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-sara-alert-patient"> </a>
+<h2><a href="StructureDefinition-sara-alert-patient.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-patient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/sara-alert-patient: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-patient')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-sara-alert-questionnaire-response"> </a>
+<h2><a href="StructureDefinition-sara-alert-questionnaire-response.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-questionnaire-response.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/sara-alert-questionnaire-response: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-symptom-onset-date"> </a>
+<h2><a href="StructureDefinition-symptom-onset-date.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-symptom-onset-date.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/symptom-onset-date: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/symptom-onset-date')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_nfreiter_dev_sara_saraalert-fhir-ig_fsh-generated_resources_StructureDefinition-travel-related-notes"> </a>
+<h2><a href="StructureDefinition-travel-related-notes.html">/Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-travel-related-notes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/travel-related-notes: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/travel-related-notes')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>

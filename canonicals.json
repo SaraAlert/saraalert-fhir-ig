@@ -1,72 +1,156 @@
 [
   {
-    "url": "http://saraalert.org/ImplementationGuide/saraalert-fhir",
     "id": "saraalert-fhir",
     "type": "ImplementationGuide",
+    "url": "http://saraalert.org/ImplementationGuide/saraalert-fhir",
     "version": "1.0.0",
     "name": "SaraAlert"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path",
+    "id": "additional-planned-travel-notes",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-notes",
+    "version": "1.0.0",
+    "name": "AdditionalPlannedTravelNotes"
+  },
+  {
+    "id": "additional-planned-travel-start-date",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-start-date",
+    "version": "1.0.0",
+    "name": "AdditionalPlannedTravelStartDate"
+  },
+  {
+    "id": "assigned-user",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/assigned-user",
+    "version": "1.0.0",
+    "name": "AssignedUser"
+  },
+  {
+    "id": "date-of-arrival",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/date-of-arrival",
+    "version": "1.0.0",
+    "name": "DateOfArrival"
+  },
+  {
+    "id": "date-of-departure",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/date-of-departure",
+    "version": "1.0.0",
+    "name": "DateOfDeparture"
+  },
+  {
+    "id": "exposure-notes",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/exposure-notes",
+    "version": "1.0.0",
+    "name": "ExposureNotes"
+  },
+  {
+    "id": "flight-or-vessel-carrier",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/flight-or-vessel-carrier",
+    "version": "1.0.0",
+    "name": "FlightOrVesselCarrier"
+  },
+  {
+    "id": "flight-or-vessel-number",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/flight-or-vessel-number",
+    "version": "1.0.0",
+    "name": "FlightOrVesselNumber"
+  },
+  {
     "id": "full-assigned-jurisdiction-path",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path",
     "version": "1.0.0",
     "name": "FullAssignedJurisdictionPath"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/isolation",
     "id": "isolation",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/isolation",
     "version": "1.0.0",
     "name": "Isolation"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/last-exposure-date",
-    "id": "last-exposure-date",
+    "id": "last-date-of-exposure",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/last-date-of-exposure",
     "version": "1.0.0",
-    "name": "LastExposureDate"
+    "name": "LastDateOfExposure"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/preferred-contact-method",
+    "id": "monitoring-plan",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/monitoring-plan",
+    "version": "1.0.0",
+    "name": "MonitoringPlan"
+  },
+  {
+    "id": "phone-type",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/phone-type",
+    "version": "1.0.0",
+    "name": "PhoneType"
+  },
+  {
+    "id": "port-of-origin",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/port-of-origin",
+    "version": "1.0.0",
+    "name": "PortOfOrigin"
+  },
+  {
     "id": "preferred-contact-method",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/preferred-contact-method",
     "version": "1.0.0",
     "name": "PreferredContactMethod"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/preferred-contact-time",
     "id": "preferred-contact-time",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/preferred-contact-time",
     "version": "1.0.0",
     "name": "PreferredContactTime"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/sara-alert-observation",
     "id": "sara-alert-observation",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/sara-alert-observation",
     "version": "1.0.0",
     "name": "SaraAlertObservation"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/sara-alert-patient",
     "id": "sara-alert-patient",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/sara-alert-patient",
     "version": "1.0.0",
     "name": "SaraAlertPatient"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response",
     "id": "sara-alert-questionnaire-response",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response",
     "version": "1.0.0",
     "name": "SaraAlertQuestionnaireResponse"
   },
   {
-    "url": "http://saraalert.org/StructureDefinition/symptom-onset-date",
     "id": "symptom-onset-date",
     "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/symptom-onset-date",
     "version": "1.0.0",
     "name": "SymptomOnsetDate"
+  },
+  {
+    "id": "travel-related-notes",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/travel-related-notes",
+    "version": "1.0.0",
+    "name": "TravelRelatedNotes"
   }
 ]

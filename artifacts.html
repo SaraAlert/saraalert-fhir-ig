@@ -4,20 +4,21 @@
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>SARAALERT-FHIR\Artifacts Summary - FHIR v4.0.1</title>
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
     <link href="fhir.css" rel="stylesheet"/>
-     
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  
+
     <!-- Project extras -->
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -27,7 +28,7 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-  
+
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
@@ -35,25 +36,28 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
 
     <style type="text/css">h2{--heading-prefix:"2"}
     h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        
+        <!-- Placeholder for child template header declarations -->
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span><br/>1.0.0 - Build CI</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">  <!-- container -->
         <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
           <!--status-bar-->
           <div class="container">
@@ -82,17 +86,18 @@
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->  
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
-        </ul>  
+        </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">  <!-- segment-content -->
+
+    <div id="segment-content">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -124,7 +129,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
    <h3>Structures: Resource Profiles </h3>
-   <p>These define constraints on FHIR resources that need to be complied with by conformant implementations</p>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
    <p>
       <table class="grid">
          <col style="width:20%"/>
@@ -134,73 +141,201 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-sara-alert-observation.html"
                      title="StructureDefinition/sara-alert-observation">Sara Alert Observation Profile</a>
                </td>
-               <td>The Sara Alert Observation profile represents a monitoree lab result.</td>
+               <td>
+<p>The Sara Alert Observation profile represents a monitoree lab result.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-sara-alert-patient.html"
                      title="StructureDefinition/sara-alert-patient">Sara Alert Patient Profile</a>
                </td>
-               <td>Sara Alert outputs additional extensions on Patient resources</td>
+               <td>
+<p>Sara Alert outputs additional extensions on Patient resources</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-sara-alert-questionnaire-response.html"
                      title="StructureDefinition/sara-alert-questionnaire-response">Sara Alert QuestionnaireResponse Profile</a>
                </td>
-               <td>The Sara Alert QuestionnaireResponse profile represents a monitoree daily report.</td>
+               <td>
+<p>The Sara Alert QuestionnaireResponse profile represents a monitoree daily report.</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
    <h3>Structures: Extension Definitions </h3>
-   <p>These define constraints on FHIR data types that need to be complied with by conformant implementations</p>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
    <p>
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-additional-planned-travel-notes.html"
+                     title="StructureDefinition/additional-planned-travel-notes">Additional Planned Travel Notes</a>
+               </td>
+               <td>
+<p>Represents any additional notes about the monitoree’s planned travel. This can include details about the nature of the trip, planned social interaction, additional destinations, etc.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-additional-planned-travel-start-date.html"
+                     title="StructureDefinition/additional-planned-travel-start-date">Additional Planned Travel Start Date</a>
+               </td>
+               <td>
+<p>Represents the date that the monitoree is planning to begin their additional travel.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-assigned-user.html"
+                     title="StructureDefinition/assigned-user">Assigned User</a>
+               </td>
+               <td>
+<p>Represents the user or group within a jurisdiction responsible for monitoring a monitoree.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-date-of-arrival.html"
+                     title="StructureDefinition/date-of-arrival">Date of Arrival</a>
+               </td>
+               <td>
+<p>Represents when the monitoree entered the United States after travel.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-date-of-departure.html"
+                     title="StructureDefinition/date-of-departure">Date of Departure</a>
+               </td>
+               <td>
+<p>Represents the date that the monitoree traveled from the Port of Origin to the United States.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-exposure-notes.html"
+                     title="StructureDefinition/exposure-notes">Exposure Notes</a>
+               </td>
+               <td>
+<p>Represents any additional notes about the monitoree’s exposure history or case information history. This can include details about the interaction with a known case, high risk activities, common exposure, etc.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-flight-or-vessel-carrier.html"
+                     title="StructureDefinition/flight-or-vessel-carrier">Flight or Vessel Carrier</a>
+               </td>
+               <td>
+<p>Represents the carrier, operating company, or provider of the flight or vessel.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-flight-or-vessel-number.html"
+                     title="StructureDefinition/flight-or-vessel-number">Flight or Vessel Number</a>
+               </td>
+               <td>
+<p>Represents the plane, train, ship, or other vessel that the monitoree used to travel to their destination.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-full-assigned-jurisdiction-path.html"
                      title="StructureDefinition/full-assigned-jurisdiction-path">Full Assigned Jurisdiction Path</a>
                </td>
-               <td>Represents the jurisdiction in which this monitoree is enrolled.</td>
+               <td>
+<p>Represents the jurisdiction in which this monitoree is enrolled.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-isolation.html"
                      title="StructureDefinition/isolation">Isolation</a>
                </td>
-               <td>If the monitoree should be in the isolation workflow (omitting this extension defaults this value to false, leaving the monitoree in the exposure workflow.</td>
+               <td>
+<p>If the monitoree should be in the isolation workflow (omitting this extension defaults this value to false, leaving the monitoree in the exposure workflow.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-last-exposure-date.html"
-                     title="StructureDefinition/last-exposure-date">Last Exposure Date</a>
+                  <a href="StructureDefinition-last-date-of-exposure.html"
+                     title="StructureDefinition/last-date-of-exposure">Last Date of Exposure</a>
                </td>
-               <td>When the monitoree's last exposure occurred for use in the Sara Alert exposure workflow.</td>
+               <td>
+<p>When the monitoree`s last exposure occurred for use in the Sara Alert exposure workflow.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-monitoring-plan.html"
+                     title="StructureDefinition/monitoring-plan">Monitoring Plan</a>
+               </td>
+               <td>
+<p>Represents the monitoring approach selected by public health based on CDC or local guidance (options are: <code class="language-plaintext highlighter-rouge">None</code>, <code class="language-plaintext highlighter-rouge">Daily active monitoring</code>, <code class="language-plaintext highlighter-rouge">Self-monitoring with public health supervision</code>, <code class="language-plaintext highlighter-rouge">Self-monitoring with delegated supervision</code>, <code class="language-plaintext highlighter-rouge">Self-observation</code>).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-phone-type.html"
+                     title="StructureDefinition/phone-type">Phone Type</a>
+               </td>
+               <td>
+<p>Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: <code class="language-plaintext highlighter-rouge">Smartphone</code>, <code class="language-plaintext highlighter-rouge">Landline</code>, <code class="language-plaintext highlighter-rouge">Plain Cell</code>).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-port-of-origin.html"
+                     title="StructureDefinition/port-of-origin">Port of Origin</a>
+               </td>
+               <td>
+<p>Represents the airport, station, or docking point that the monitoree traveled from.</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-preferred-contact-method.html"
                      title="StructureDefinition/preferred-contact-method">Preferred Contact Method</a>
                </td>
-               <td>The monitorees Sara Alert preferred contact method (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`).</td>
+               <td>
+<p>Represents the form in which the monitoree receives their daily symptom reports (options are: <code class="language-plaintext highlighter-rouge">E-mailed Web Link</code>, <code class="language-plaintext highlighter-rouge">SMS Texted Weblink</code>, <code class="language-plaintext highlighter-rouge">Telephone call</code>, and <code class="language-plaintext highlighter-rouge">SMS Text-message</code>).</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-preferred-contact-time.html"
                      title="StructureDefinition/preferred-contact-time">Preferred Contact Time</a>
                </td>
-               <td>The monitorees Sara Alert preferred contact time (options are: `Morning`, `Afternoon`, `Evening`).</td>
+               <td>
+<p>Represents the time period that the system sends out symptom reports to a monitoree (options are: <code class="language-plaintext highlighter-rouge">Morning</code>, <code class="language-plaintext highlighter-rouge">Afternoon</code>, <code class="language-plaintext highlighter-rouge">Evening</code>).</p>
+</td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-symptom-onset-date.html"
                      title="StructureDefinition/symptom-onset-date">Symptom Onset Date</a>
                </td>
-               <td>When the monitoree's first symptoms appeared for use in the Sara Alert isolation workflow.</td>
+               <td>
+<p>When the monitoree`s first symptoms appeared for use in the Sara Alert isolation workflow.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-travel-related-notes.html"
+                     title="StructureDefinition/travel-related-notes">Travel Related Notes</a>
+               </td>
+               <td>
+<p>Represents any additional notes about the monitoree’s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc.</p>
+</td>
             </tr>
          </tbody>
       </table>
@@ -213,12 +348,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.mitre.org">The MITRE Corporation</a>.  Package saraalert-fhir#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Nov 10, 2020 10:17-0500">2020-11-10</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.mitre.org">The MITRE Corporation</a>.  Package saraalert-fhir#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 12, 2021 12:19-0500">2021-01-12</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
@@ -238,7 +382,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>

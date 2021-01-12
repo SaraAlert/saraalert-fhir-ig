@@ -257,25 +257,9 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:QuestionnaireResponse/f:item/f:answer/f:item</sch:title>
-    <sch:rule context="f:QuestionnaireResponse/f:item/f:answer/f:item">
-      <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
-      <sch:assert test="count(f:answer) &gt;= 1">answer: minimum cardinality of 'answer' is 1</sch:assert>
-      <sch:assert test="count(f:answer) &lt;= 1">answer: maximum cardinality of 'answer' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>QuestionnaireResponse.item.answer.item</sch:title>
     <sch:rule context="f:QuestionnaireResponse/f:item/f:answer/f:item">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:QuestionnaireResponse/f:item/f:item</sch:title>
-    <sch:rule context="f:QuestionnaireResponse/f:item/f:item">
-      <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
-      <sch:assert test="count(f:answer) &gt;= 1">answer: minimum cardinality of 'answer' is 1</sch:assert>
-      <sch:assert test="count(f:answer) &lt;= 1">answer: maximum cardinality of 'answer' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
