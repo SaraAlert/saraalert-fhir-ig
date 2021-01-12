@@ -9,7 +9,6 @@ releaseLabel: Build CI
 publisher:
   name: The MITRE Corporation
   url: http://www.mitre.org
-template: fhir.base.template#0.1.0
 dependencies:
   hl7.fhir.us.core: 3.1.0
 

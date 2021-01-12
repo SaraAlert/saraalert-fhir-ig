@@ -31,6 +31,14 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * birthDate MS
 * address MS
 * communication MS
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slice to distinguish the identifier for State/Local ID."
+* identifier contains StateLocalId 0..1 MS
+* identifier[StateLocalId].system = "http://saraalert.org/SaraAlert/state-local-id"
+* identifier[StateLocalId] ^short = "The State/Local ID assigned by the state or jurisdiction’s monitoring policies."
+* identifier[StateLocalId] ^comment = "The State/Local ID is the variable to represent the assigned state or local ID of the monitoree. This field is determined from the assigned state or jurisdiction’s monitoring policies."
 
 // Preferred Contact Method Extension
 Extension: PreferredContactMethod
