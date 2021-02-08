@@ -33,7 +33,7 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * address ^slicing.discriminator.type = #value
 * address ^slicing.discriminator.path = "extension('http://saraalert.org/SaraAlert/StructureDefinition/address-type').value"
 * address ^slicing.rules = #open
-* address ^slicing.description = "Slice to distinguish a Foreign Address."
+* address ^slicing.description = "Slice to distinguish a Foreign Address (outside of the USA)."
 * address contains ForeignAddress 0..1 MS
 * address[ForeignAddress].extension contains address-type named address-type 1..1 MS
 * address[ForeignAddress].extension[address-type].valueString = "Foreign"
