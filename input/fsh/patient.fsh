@@ -30,6 +30,13 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * telecom MS
 * birthDate MS
 * address MS
+* address ^slicing.discriminator.type = #value
+* address ^slicing.discriminator.path = "extension('http://saraalert.org/SaraAlert/StructureDefinition/address-type').value"
+* address ^slicing.rules = #open
+* address ^slicing.description = "Slice to distinguish a Foreign Address (outside of the USA)."
+* address contains ForeignAddress 0..1 MS
+* address[ForeignAddress].extension contains address-type named address-type 1..1 MS
+* address[ForeignAddress].extension[address-type].valueString = "Foreign"
 * communication MS
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -164,4 +171,11 @@ Extension: PhoneType
 Id: phone-type
 Title: "Phone Type"
 Description: "Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."
+* value[x] only string
+
+// Address Type
+Extension: AddressType
+Id: address-type
+Title: "Address Type"
+Description: "Indicates if a monitoree's address is within the USA, or outside of the USA (options are: `USA` and `Foreign`). The extension only has meaning when used on the 'Patient.address' element. If this extension is not present the address is assumed to be within the USA."
 * value[x] only string
