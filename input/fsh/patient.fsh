@@ -26,6 +26,7 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   additional-planned-travel-notes named additional-planned-travel-notes 0..1 MS and
   continuous-exposure named continuous-exposure 0..1 MS
 * obeys sara-1
+* obeys sara-2
 * telecom.extension contains phone-type named phone-type 0..1 MS
 * active MS
 * name MS
@@ -193,4 +194,10 @@ Description: "Indicates if a monitoree's exposure to one or more cases is ongoin
 Invariant:  sara-1
 Description: "If 'Continuous Exposure' is set to true, then there shall be no 'Last Date of Exposure'"
 Expression: "extension.where(url='http://saraalert.org/StructureDefinition/continuous-exposure').first().valueBoolean implies Patient.extension.where(url='http://saraalert.org/StructureDefinition/last-date-of-exposure').first().valueDate.empty()"
+Severity:   #error
+
+// Invariant for Last Date of Exposure
+Invariant:  sara-2
+Description: "If 'Continuous Exposure' and 'Isolation' are both set to false, then there shall be a 'Last Date of Exposure'"
+Expression: "extension.where(url='http://saraalert.org/StructureDefinition/continuous-exposure').first().valueBoolean.not() and extension.where(url='http://saraalert.org/StructureDefinition/isolation').first().valueBoolean.not() implies Patient.extension.where(url='http://saraalert.org/StructureDefinition/last-date-of-exposure').first().valueDate.exists()"
 Severity:   #error
