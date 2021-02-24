@@ -18,6 +18,13 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/address-type",
+      "title": "Address Type",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/assigned-user",
       "title": "Assigned User",
       "types": [
@@ -207,6 +214,9 @@
     ],
     "http://saraalert.org/StructureDefinition/additional-planned-travel-start-date": [
       "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/address-type": [
+      "Patient.address"
     ],
     "http://saraalert.org/StructureDefinition/assigned-user": [
       "Patient"

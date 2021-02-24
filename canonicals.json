@@ -21,6 +21,13 @@
     "name": "AdditionalPlannedTravelStartDate"
   },
   {
+    "id": "address-type",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/address-type",
+    "version": "1.0.0",
+    "name": "AddressType"
+  },
+  {
     "id": "assigned-user",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/assigned-user",

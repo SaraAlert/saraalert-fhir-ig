@@ -1,14 +1,15 @@
 ﻿SaraAlert : Validation Results
 =========================================
 
-err = 1, warn = 21, info = 0
-IG Publisher Version: 1.1.56
-Generated Tue Jan 12 12:19:38 EST 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
+err = 1, warn = 22, info = 0
+IG Publisher Version: 1.1.59
+Generated Wed Feb 24 12:27:42 EST 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
 
- Build Errors : 7 / 0 / 0
+ Build Errors : 1 / 0 / 0
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir : 0 / 0 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-notes : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-start-date : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-address-type : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-assigned-user : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-arrival : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-departure : 0 / 1 / 1
@@ -31,12 +32,6 @@ Generated Tue Jan 12 12:19:38 EST 2021. FHIR version 4.0.1 for saraalert-fhir#1.
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[26].value: Supressed messages file not found
-ERROR: /Users/nfreiter/dev/sara/saraalert-fhir-ig/output/StructureDefinition-sara-alert-observation.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 362, column 1444: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
-ERROR: /Users/nfreiter/dev/sara/saraalert-fhir-ig/output/StructureDefinition-sara-alert-observation.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 623, column 1444: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/observation.html#Observation.referenceRange' for "referenceRange (Observation)" cannot be resolved
-ERROR: /Users/nfreiter/dev/sara/saraalert-fhir-ig/output/StructureDefinition-sara-alert-questionnaire-response.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 328, column 1528: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
-ERROR: /Users/nfreiter/dev/sara/saraalert-fhir-ig/output/StructureDefinition-sara-alert-questionnaire-response.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 329, column 1406: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
-ERROR: /Users/nfreiter/dev/sara/saraalert-fhir-ig/output/StructureDefinition-sara-alert-questionnaire-response.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 527, column 1528: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
-ERROR: /Users/nfreiter/dev/sara/saraalert-fhir-ig/output/StructureDefinition-sara-alert-questionnaire-response.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 528, column 1406: The link 'http://hl7.org/fhir/R4/http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item' for "item (QuestionnaireResponse)" cannot be resolved
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir.json ==
 INFORMATION: ImplementationGuide/saraalert-fhir: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-notes.json ==
@@ -45,6 +40,9 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-start-date.json ==
 INFORMATION: StructureDefinition/additional-planned-travel-start-date: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/additional-planned-travel-start-date'): The Implementation Guide contains no examples for this extension
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-address-type.json ==
+INFORMATION: StructureDefinition/address-type: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/address-type'): The Implementation Guide contains no examples for this extension
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-assigned-user.json ==
 INFORMATION: StructureDefinition/assigned-user: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/assigned-user'): The Implementation Guide contains no examples for this extension

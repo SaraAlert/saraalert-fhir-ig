@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2021-01-12T12:19:18-05:00",
+  "date": "2021-02-24T12:27:19-05:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -367,6 +367,20 @@
         },
         "name": "Additional Planned Travel Start Date",
         "description": "Represents the date that the monitoree is planning to begin their additional travel.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/address-type"
+        },
+        "name": "Address Type",
+        "description": "Indicates if a monitoree's address is within the USA, or outside of the USA (options are: `USA` and `Foreign`). The extension only has meaning when used on the 'Patient.address' element. If this extension is not present the address is assumed to be within the USA.",
         "exampleBoolean": false
       },
       {
