@@ -30,7 +30,7 @@ Extension: ContactAttempts
 Id: contact-attempts
 Title: "Contact Attempts"
 Description: "Represents the number of times that a close contact of a monitoree has been contacted."
-* value[x] only positiveInt
+* value[x] only unsignedInt
 
 // Enrolled Patient Extension
 Extension: EnrolledPatient
