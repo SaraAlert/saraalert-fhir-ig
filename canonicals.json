@@ -35,6 +35,13 @@
     "name": "AssignedUser"
   },
   {
+    "id": "continuous-exposure",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/continuous-exposure",
+    "version": "1.0.0",
+    "name": "ContinuousExposure"
+  },
+  {
     "id": "date-of-arrival",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/date-of-arrival",

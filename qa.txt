@@ -1,9 +1,9 @@
 ﻿SaraAlert : Validation Results
 =========================================
 
-err = 1, warn = 22, info = 0
-IG Publisher Version: 1.1.59
-Generated Wed Feb 24 12:27:42 EST 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
+err = 1, warn = 23, info = 0
+IG Publisher Version: 1.1.59 Out of date - current version is 1.1.63
+Generated Fri Mar 12 09:20:08 EST 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
 
  Build Errors : 1 / 0 / 0
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir : 0 / 0 / 1
@@ -11,6 +11,7 @@ Generated Wed Feb 24 12:27:42 EST 2021. FHIR version 4.0.1 for saraalert-fhir#1.
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-start-date : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-address-type : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-assigned-user : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-continuous-exposure : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-arrival : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-departure : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-exposure-notes : 0 / 1 / 1
@@ -46,6 +47,9 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-assigned-user.json ==
 INFORMATION: StructureDefinition/assigned-user: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/assigned-user'): The Implementation Guide contains no examples for this extension
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-continuous-exposure.json ==
+INFORMATION: StructureDefinition/continuous-exposure: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/continuous-exposure'): The Implementation Guide contains no examples for this extension
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-arrival.json ==
 INFORMATION: StructureDefinition/date-of-arrival: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/date-of-arrival'): The Implementation Guide contains no examples for this extension

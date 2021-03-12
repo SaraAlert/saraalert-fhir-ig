@@ -32,6 +32,13 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/continuous-exposure",
+      "title": "Continuous Exposure",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/date-of-arrival",
       "title": "Date of Arrival",
       "types": [
@@ -219,6 +226,9 @@
       "Patient.address"
     ],
     "http://saraalert.org/StructureDefinition/assigned-user": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/continuous-exposure": [
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/date-of-arrival": [

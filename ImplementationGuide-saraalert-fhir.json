@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2021-02-24T12:27:19-05:00",
+  "date": "2021-03-12T09:19:46-05:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -395,6 +395,20 @@
         },
         "name": "Assigned User",
         "description": "Represents the user or group within a jurisdiction responsible for monitoring a monitoree.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/continuous-exposure"
+        },
+        "name": "Continuous Exposure",
+        "description": "Indicates if a monitoree's exposure to one or more cases is ongoing. This type of exposure means there is no known 'Last Date of Exposure'",
         "exampleBoolean": false
       },
       {

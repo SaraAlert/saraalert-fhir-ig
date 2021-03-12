@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "SaraAlertObservation"];
   fhir:StructureDefinition.title [ fhir:value "Sara Alert Observation Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-02-24T12:27:19-05:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-12T09:19:46-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "The MITRE Corporation"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
