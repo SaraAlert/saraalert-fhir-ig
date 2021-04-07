@@ -32,6 +32,13 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/contact-attempts",
+      "title": "Contact Attempts",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/continuous-exposure",
       "title": "Continuous Exposure",
       "types": [
@@ -50,6 +57,20 @@
       "title": "Date of Departure",
       "types": [
         "date"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/enrolled-patient",
+      "title": "Enrolled Patient",
+      "types": [
+        "Reference",
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string"
       ]
     },
     {
@@ -97,6 +118,13 @@
     {
       "url": "http://saraalert.org/StructureDefinition/monitoring-plan",
       "title": "Monitoring Plan",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/notes",
+      "title": "Notes",
       "types": [
         "string"
       ]
@@ -162,6 +190,12 @@
         "url": "http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response",
         "title": "Sara Alert QuestionnaireResponse Profile"
       }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://saraalert.org/StructureDefinition/sara-alert-related-person",
+        "title": "Sara Alert RelatedPerson Profile"
+      }
     ]
   },
   "usage": {
@@ -179,6 +213,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
@@ -226,7 +263,11 @@
       "Patient.address"
     ],
     "http://saraalert.org/StructureDefinition/assigned-user": [
-      "Patient"
+      "Patient",
+      "RelatedPerson"
+    ],
+    "http://saraalert.org/StructureDefinition/contact-attempts": [
+      "RelatedPerson"
     ],
     "http://saraalert.org/StructureDefinition/continuous-exposure": [
       "Patient"
@@ -236,6 +277,9 @@
     ],
     "http://saraalert.org/StructureDefinition/date-of-departure": [
       "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/enrolled-patient": [
+      "RelatedPerson"
     ],
     "http://saraalert.org/StructureDefinition/exposure-notes": [
       "Patient"
@@ -253,10 +297,14 @@
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/last-date-of-exposure": [
-      "Patient"
+      "Patient",
+      "RelatedPerson"
     ],
     "http://saraalert.org/StructureDefinition/monitoring-plan": [
       "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/notes": [
+      "RelatedPerson"
     ],
     "http://saraalert.org/StructureDefinition/phone-type": [
       "Patient.telecom"

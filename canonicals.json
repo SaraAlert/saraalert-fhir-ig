@@ -35,6 +35,13 @@
     "name": "AssignedUser"
   },
   {
+    "id": "contact-attempts",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/contact-attempts",
+    "version": "1.0.0",
+    "name": "ContactAttempts"
+  },
+  {
     "id": "continuous-exposure",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/continuous-exposure",
@@ -54,6 +61,13 @@
     "url": "http://saraalert.org/StructureDefinition/date-of-departure",
     "version": "1.0.0",
     "name": "DateOfDeparture"
+  },
+  {
+    "id": "enrolled-patient",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/enrolled-patient",
+    "version": "1.0.0",
+    "name": "EnrolledPatient"
   },
   {
     "id": "exposure-notes",
@@ -105,6 +119,13 @@
     "name": "MonitoringPlan"
   },
   {
+    "id": "notes",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/notes",
+    "version": "1.0.0",
+    "name": "Notes"
+  },
+  {
     "id": "phone-type",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/phone-type",
@@ -152,6 +173,13 @@
     "url": "http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response",
     "version": "1.0.0",
     "name": "SaraAlertQuestionnaireResponse"
+  },
+  {
+    "id": "sara-alert-related-person",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/sara-alert-related-person",
+    "version": "1.0.0",
+    "name": "SaraAlertRelatedPerson"
   },
   {
     "id": "symptom-onset-date",

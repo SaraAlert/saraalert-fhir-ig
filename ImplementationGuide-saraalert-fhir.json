@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2021-03-12T09:19:46-05:00",
+  "date": "2021-04-07T13:24:31-04:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -345,6 +345,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sara-alert-related-person"
+        },
+        "name": "Sara Alert RelatedPerson Profile",
+        "description": "The Sara Alert RelatedPerson profile represents a close contact of a monitoree.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -405,6 +419,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/contact-attempts"
+        },
+        "name": "Contact Attempts",
+        "description": "Represents the number of times that a close contact of a monitoree has been contacted.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/continuous-exposure"
         },
         "name": "Continuous Exposure",
@@ -437,6 +465,20 @@
         },
         "name": "Date of Departure",
         "description": "Represents the date that the monitoree traveled from the Port of Origin to the United States.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/enrolled-patient"
+        },
+        "name": "Enrolled Patient",
+        "description": "References the monitoree that corresponds to the close contact, if such a monitoree exists.",
         "exampleBoolean": false
       },
       {
@@ -535,6 +577,20 @@
         },
         "name": "Monitoring Plan",
         "description": "Represents the monitoring approach selected by public health based on CDC or local guidance (options are: `None`, `Daily active monitoring`, `Self-monitoring with public health supervision`, `Self-monitoring with delegated supervision`, `Self-observation`).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/notes"
+        },
+        "name": "Notes",
+        "description": "Represents general notes used to describe a close contact of a monitoree.",
         "exampleBoolean": false
       },
       {

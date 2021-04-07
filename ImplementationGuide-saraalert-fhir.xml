@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2021-03-12T09:19:46-05:00"/>
+  <date value="2021-04-07T13:24:31-04:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -222,6 +222,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sara-alert-related-person"/>
+      </reference>
+      <name value="Sara Alert RelatedPerson Profile"/>
+      <description value="The Sara Alert RelatedPerson profile represents a close contact of a monitoree."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -269,6 +280,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/contact-attempts"/>
+      </reference>
+      <name value="Contact Attempts"/>
+      <description value="Represents the number of times that a close contact of a monitoree has been contacted."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/continuous-exposure"/>
       </reference>
       <name value="Continuous Exposure"/>
@@ -295,6 +317,17 @@
       </reference>
       <name value="Date of Departure"/>
       <description value="Represents the date that the monitoree traveled from the Port of Origin to the United States."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/enrolled-patient"/>
+      </reference>
+      <name value="Enrolled Patient"/>
+      <description value="References the monitoree that corresponds to the close contact, if such a monitoree exists."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -372,6 +405,17 @@
       </reference>
       <name value="Monitoring Plan"/>
       <description value="Represents the monitoring approach selected by public health based on CDC or local guidance (options are: `None`, `Daily active monitoring`, `Self-monitoring with public health supervision`, `Self-monitoring with delegated supervision`, `Self-observation`)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/notes"/>
+      </reference>
+      <name value="Notes"/>
+      <description value="Represents general notes used to describe a close contact of a monitoree."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
