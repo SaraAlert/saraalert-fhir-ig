@@ -41,6 +41,7 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * address[ForeignAddress].extension contains address-type named address-type 1..1 MS
 * address[ForeignAddress].extension[address-type].valueString = "Foreign"
 * communication MS
+* communication.language from SaraAlertLanguage (required)
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
