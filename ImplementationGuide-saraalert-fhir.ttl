@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "SaraAlert"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-04-07T13:24:31-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-05-05T21:26:09-04:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The MITRE Corporation"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -293,6 +293,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://saraalert.org/StructureDefinition/sara-alert-immunization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sara-alert-immunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sara Alert Immunization Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Sara Alert Immunization profile represents a vaccination of a monitoree." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://saraalert.org/StructureDefinition/sara-alert-observation>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/sara-alert-observation" ]
        ];
@@ -300,7 +314,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Sara Alert Observation profile represents a monitoree lab result." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -314,7 +328,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sara Alert outputs additional extensions on Patient resources" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -328,7 +342,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Sara Alert QuestionnaireResponse profile represents a monitoree daily report." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -342,7 +356,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Sara Alert RelatedPerson profile represents a close contact of a monitoree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -356,7 +370,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents any additional notes about the monitoree’s planned travel. This can include details about the nature of the trip, planned social interaction, additional destinations, etc." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -370,7 +384,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the date that the monitoree is planning to begin their additional travel." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -384,7 +398,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates if a monitoree's address is within the USA, or outside of the USA (options are: `USA` and `Foreign`). The extension only has meaning when used on the 'Patient.address' element. If this extension is not present the address is assumed to be within the USA." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -398,7 +412,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the user or group within a jurisdiction responsible for monitoring a monitoree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -412,7 +426,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the number of times that a close contact of a monitoree has been contacted." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -426,7 +440,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates if a monitoree's exposure to one or more cases is ongoing. This type of exposure means there is no known 'Last Date of Exposure'" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -440,7 +454,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents when the monitoree entered the United States after travel." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -454,7 +468,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the date that the monitoree traveled from the Port of Origin to the United States." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -468,7 +482,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "References the monitoree that corresponds to the close contact, if such a monitoree exists." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -482,7 +496,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents any additional notes about the monitoree’s exposure history or case information history. This can include details about the interaction with a known case, high risk activities, common exposure, etc." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -496,7 +510,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the carrier, operating company, or provider of the flight or vessel." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -510,7 +524,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the plane, train, ship, or other vessel that the monitoree used to travel to their destination." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -524,7 +538,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the jurisdiction in which this monitoree is enrolled." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -538,7 +552,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "If the monitoree should be in the isolation workflow (omitting this extension defaults this value to false, leaving the monitoree in the exposure workflow." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -552,7 +566,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "When the monitoree`s last exposure occurred for use in the Sara Alert exposure workflow." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -566,7 +580,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the monitoring approach selected by public health based on CDC or local guidance (options are: `None`, `Daily active monitoring`, `Self-monitoring with public health supervision`, `Self-monitoring with delegated supervision`, `Self-observation`)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -580,7 +594,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents general notes used to describe a close contact of a monitoree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -594,7 +608,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -608,7 +622,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the airport, station, or docking point that the monitoree traveled from." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -622,7 +636,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the form in which the monitoree receives their daily symptom reports (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -636,7 +650,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the time period that the system sends out symptom reports to a monitoree (options are: `Morning`, `Afternoon`, `Evening`)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -650,7 +664,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "When the monitoree`s first symptoms appeared for use in the Sara Alert isolation workflow." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -662,6 +676,19 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Travel Related Notes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents any additional notes about the monitoree’s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://saraalert.org/ValueSet/covid-19-vaccines>;
+         fhir:Reference.reference [ fhir:value "ValueSet/covid-19-vaccines" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Vaccines Value Set" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

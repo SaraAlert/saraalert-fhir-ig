@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2021-04-07T13:24:31-04:00",
+  "date": "2021-05-05T21:26:09-04:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -299,6 +299,20 @@
       }
     ],
     "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sara-alert-immunization"
+        },
+        "name": "Sara Alert Immunization Profile",
+        "description": "The Sara Alert Immunization profile represents a vaccination of a monitoree.",
+        "exampleBoolean": false
+      },
       {
         "extension": [
           {
@@ -675,6 +689,19 @@
         },
         "name": "Travel Related Notes",
         "description": "Represents any additional notes about the monitoree’s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/covid-19-vaccines"
+        },
+        "name": "COVID-19 Vaccines Value Set",
         "exampleBoolean": false
       }
     ],

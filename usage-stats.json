@@ -173,6 +173,12 @@
     }
   ],
   "profiles": {
+    "Immunization": [
+      {
+        "url": "http://saraalert.org/StructureDefinition/sara-alert-immunization",
+        "title": "Sara Alert Immunization Profile"
+      }
+    ],
     "Observation": [
       {
         "url": "http://saraalert.org/StructureDefinition/sara-alert-observation",

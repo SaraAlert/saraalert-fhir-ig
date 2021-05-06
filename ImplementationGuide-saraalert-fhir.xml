@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2021-04-07T13:24:31-04:00"/>
+  <date value="2021-05-05T21:26:09-04:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -187,6 +187,17 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sara-alert-immunization"/>
+      </reference>
+      <name value="Sara Alert Immunization Profile"/>
+      <description value="The Sara Alert Immunization profile represents a vaccination of a monitoree."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -482,6 +493,16 @@
       </reference>
       <name value="Travel Related Notes"/>
       <description value="Represents any additional notes about the monitoree&#x2019;s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covid-19-vaccines"/>
+      </reference>
+      <name value="COVID-19 Vaccines Value Set"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

@@ -1,11 +1,11 @@
 ﻿SaraAlert : Validation Results
 =========================================
 
-err = 1, warn = 27, info = 0
-IG Publisher Version: 1.1.59 Out of date - current version is 1.1.65
-Generated Wed Apr 07 13:24:59 EDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
+err = 1, warn = 31, info = 0
+IG Publisher Version: 1.1.66 Out of date - current version is 1.1.68
+Generated Wed May 05 21:26:50 EDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
 
- Build Errors : 1 / 0 / 0
+ Build Errors : 1 / 1 / 0
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir : 0 / 0 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-notes : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-start-date : 0 / 1 / 1
@@ -28,15 +28,18 @@ Generated Wed Apr 07 13:24:59 EDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-port-of-origin : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-preferred-contact-method : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-preferred-contact-time : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-immunization : 0 / 3 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-observation : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-patient : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-questionnaire-response : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-related-person : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-symptom-onset-date : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-travel-related-notes : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-covid-19-vaccines : 0 / 0 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[26].value: Supressed messages file not found
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/covid-19-vaccines.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir.json ==
 INFORMATION: ImplementationGuide/saraalert-fhir: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-notes.json ==
@@ -102,6 +105,11 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-preferred-contact-time.json ==
 INFORMATION: StructureDefinition/preferred-contact-time: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/preferred-contact-time'): The Implementation Guide contains no examples for this extension
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-immunization.json ==
+INFORMATION: StructureDefinition/sara-alert-immunization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/sara-alert-immunization: StructureDefinition.snapshot.element[60].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://hl7.org/fhir/sid/cvx#213 in http://hl7.org/fhir/sid/cvx - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://hl7.org/fhir/sid/cvx#213'
+WARNING: StructureDefinition/sara-alert-immunization: StructureDefinition.differential.element[7].pattern.ofType(CodeableConcept).coding[0]: Unknown Code http://hl7.org/fhir/sid/cvx#213 in http://hl7.org/fhir/sid/cvx - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://hl7.org/fhir/sid/cvx#213'
+WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-immunization'): The Implementation Guide contains no examples for this profile
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-observation.json ==
 INFORMATION: StructureDefinition/sara-alert-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-observation'): The Implementation Guide contains no examples for this profile
@@ -120,3 +128,5 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-travel-related-notes.json ==
 INFORMATION: StructureDefinition/travel-related-notes: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/travel-related-notes'): The Implementation Guide contains no examples for this extension
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-covid-19-vaccines.json ==
+INFORMATION: ValueSet/covid-19-vaccines: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

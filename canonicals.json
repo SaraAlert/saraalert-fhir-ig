@@ -154,6 +154,13 @@
     "name": "PreferredContactTime"
   },
   {
+    "id": "sara-alert-immunization",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/sara-alert-immunization",
+    "version": "1.0.0",
+    "name": "SaraAlertImmunization"
+  },
+  {
     "id": "sara-alert-observation",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/sara-alert-observation",
@@ -194,5 +201,12 @@
     "url": "http://saraalert.org/StructureDefinition/travel-related-notes",
     "version": "1.0.0",
     "name": "TravelRelatedNotes"
+  },
+  {
+    "id": "covid-19-vaccines",
+    "type": "ValueSet",
+    "url": "http://saraalert.org/ValueSet/covid-19-vaccines",
+    "version": "1.0.0",
+    "name": "COVID19VaccinesValueSet"
   }
 ]
