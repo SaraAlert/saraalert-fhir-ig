@@ -1,4 +1,24 @@
 Alias: BCP47 = urn:ietf:bcp:47
+Alias: LNC = http://loinc.org
+Alias: SNO = http://snomed.info/sct
+Alias: NULL = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
+Alias: CAT = http://terminology.hl7.org/CodeSystem/observation-category
+
+ValueSet: SaraAlertLabResult
+* SNO#10828004
+* SNO#260385009
+* SNO#82334004
+* NULL#oth
+
+ValueSet: SaraAlertLabType
+* LNC#94500-6
+* LNC#94558-4
+* LNC#94762-2
+* LNC#94563-4
+* LNC#94564-2
+* LNC#94562-6
+* NULL#oth
+* NULL#unk
 
 ValueSet: SaraAlertLanguage
 Title: "Sara Alert Language ValueSet"
