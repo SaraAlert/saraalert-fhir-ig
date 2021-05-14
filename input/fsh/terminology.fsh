@@ -8,7 +8,7 @@ ValueSet: SaraAlertLabResult
 * SNO#10828004
 * SNO#260385009
 * SNO#82334004
-* NULL#oth
+* NULL#OTH
 
 ValueSet: SaraAlertLabType
 * LNC#94500-6
@@ -17,8 +17,8 @@ ValueSet: SaraAlertLabType
 * LNC#94563-4
 * LNC#94564-2
 * LNC#94562-6
-* NULL#oth
-* NULL#unk
+* NULL#OTH
+* NULL#UNK
 
 ValueSet: SaraAlertLanguage
 Title: "Sara Alert Language ValueSet"

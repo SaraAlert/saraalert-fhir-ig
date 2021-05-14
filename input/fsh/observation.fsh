@@ -15,14 +15,11 @@ Description: "The Sara Alert Observation profile represents a monitoree lab resu
 * subject only Reference(SaraAlertPatient)
 * effective[x] only dateTime
 * effectiveDateTime MS
+* issued MS
+* issued ^comment = """
+    This value must be specified in the format YYYY-MM-DDThh:mm:ss.sss+zz:zz, but note that only
+    YYYY-MM-DD will be used by the system. The remainder will be ignored.
+    """
 * value[x] only CodeableConcept
 * valueCodeableConcept MS
 * valueCodeableConcept from SaraAlertLabResult (required)
-* extension contains report-date named report-date 0..1 MS
-
-// Preferred Contact Method Extension
-Extension: ReportDate
-Id: report-date
-Title: "Report Date"
-Description: "Represents the report date for a lab result."
-* value[x] only date
