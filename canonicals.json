@@ -203,6 +203,13 @@
     "name": "TravelRelatedNotes"
   },
   {
+    "id": "SaraAlertLanguage",
+    "type": "ValueSet",
+    "url": "http://saraalert.org/ValueSet/SaraAlertLanguage",
+    "version": "1.0.0",
+    "name": "SaraAlertLanguage"
+  },
+  {
     "id": "covid-19-vaccines",
     "type": "ValueSet",
     "url": "http://saraalert.org/ValueSet/covid-19-vaccines",

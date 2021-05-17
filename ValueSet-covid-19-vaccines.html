@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
@@ -88,10 +88,20 @@
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>COVID-19 Vaccines Value Set</b></li>
+          <span style="float:right;">
+
+            <a href="StructureDefinition-travel-related-notes.profile.ttl.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="ValueSet-covid-19-vaccines.xml.html">next&gt;</a>
+
+          </span>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
 
+    <a name="top"> </a>
     <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
@@ -148,7 +158,7 @@
  <tr><td>Version:</td><td>1.0.0</td></tr>
  <tr><td>Name:</td><td>COVID19VaccinesValueSet</td></tr>
  <tr><td>Title:</td><td>COVID-19 Vaccines Value Set</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-05-05T21:26:09-04:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-05-17T13:06:35-05:00</td></tr>
  <tr><td>Publisher:</td><td>The MITRE Corporation</td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-covid-19-vaccines.xml.html">XML</a> / <a href="ValueSet-covid-19-vaccines.json.html">JSON</a> / <a href="ValueSet-covid-19-vaccines.ttl.html">Turtle</a></td></tr>
 </tbody></table>
@@ -178,7 +188,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 4 concepts</p><div style="border: maroon 1px solid; background-color: #FFCCCC; padding: 8px"><p>Warning: this expansion is generated from fragments of the following code systems, and may be missing codes, or include codes that are not valid:</p><ul><li><a href="http://terminology.hl7.org/2.0.0/CodeSystem-CVX.html">PH_VaccinesAdministeredCVX_CDC_NIP</a></li><li><a href="http://terminology.hl7.org/2.0.0/CodeSystem-CVX.html">PH_VaccinesAdministeredCVX_CDC_NIP</a></li><li><a href="http://terminology.hl7.org/2.0.0/CodeSystem-CVX.html">PH_VaccinesAdministeredCVX_CDC_NIP</a></li></ul></div><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a></li><li><a href="http://terminology.hl7.org/2.0.0/CodeSystem-CVX.html">PH_VaccinesAdministeredCVX_CDC_NIP v2.ext.0 (CodeSystem)</a></li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-cvx-207"> </a>207</td><td>http://hl7.org/fhir/sid/cvx</td><td>Moderna COVID-19 Vaccine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-cvx-208"> </a>208</td><td>http://hl7.org/fhir/sid/cvx</td><td>Pfizer COVID-19 Vaccine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-cvx-212"> </a>212</td><td>http://hl7.org/fhir/sid/cvx</td><td>Janssen COVID-19 Vaccine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a><a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>unknown</td><td>**Description:**A proper value is applicable, but not known.
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 4 concepts</p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a></li><li>http://hl7.org/fhir/sid/cvx version 20210406</li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-cvx-207"> </a>207</td><td>http://hl7.org/fhir/sid/cvx</td><td>Moderna COVID-19 Vaccine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-cvx-208"> </a>208</td><td>http://hl7.org/fhir/sid/cvx</td><td>Pfizer COVID-19 Vaccine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---hl7.org-fhir-sid-cvx-212"> </a>212</td><td>http://hl7.org/fhir/sid/cvx</td><td>Janssen COVID-19 Vaccine</td><td/></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a><a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>unknown</td><td>**Description:**A proper value is applicable, but not known.
 
 **Usage Notes**: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
 
@@ -240,11 +250,33 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="StructureDefinition-travel-related-notes.profile.ttl.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="ValueSet-covid-19-vaccines.xml.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.mitre.org">The MITRE Corporation</a>.  Package saraalert-fhir#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 5, 2021 21:26-0400">2021-05-05</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.mitre.org">The MITRE Corporation</a>.  Package saraalert-fhir#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 17, 2021 13:06-0500">2021-05-17</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

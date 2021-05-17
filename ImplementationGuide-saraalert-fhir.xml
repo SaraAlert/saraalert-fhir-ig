@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2021-05-05T21:26:09-04:00"/>
+  <date value="2021-05-17T13:06:35-05:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -503,6 +503,17 @@
         <reference value="ValueSet/covid-19-vaccines"/>
       </reference>
       <name value="COVID-19 Vaccines Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SaraAlertLanguage"/>
+      </reference>
+      <name value="Sara Alert Language ValueSet"/>
+      <description value="This ValueSet lists the allowed values for setting &quot;Primary Language&quot; and &quot;Secondary Language&quot;&#xA;in Sara Alert. Either the &quot;Code&quot; value or the &quot;Display&quot; value may be used. In cases where the 2-letter&#xA;ISO 639-1 code is listed, the corresponding 3-letter ISO 639-2 code may also be used."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

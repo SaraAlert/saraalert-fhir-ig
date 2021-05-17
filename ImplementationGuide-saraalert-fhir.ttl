@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
   fhir:ImplementationGuide.name [ fhir:value "SaraAlert"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-05-05T21:26:09-04:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-05-17T13:06:35-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "The MITRE Corporation"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -689,6 +689,20 @@
          fhir:Reference.reference [ fhir:value "ValueSet/covid-19-vaccines" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "COVID-19 Vaccines Value Set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://saraalert.org/ValueSet/SaraAlertLanguage>;
+         fhir:Reference.reference [ fhir:value "ValueSet/SaraAlertLanguage" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sara Alert Language ValueSet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet lists the allowed values for setting \"Primary Language\" and \"Secondary Language\"\nin Sara Alert. Either the \"Code\" value or the \"Display\" value may be used. In cases where the 2-letter\nISO 639-1 code is listed, the corresponding 3-letter ISO 639-2 code may also be used." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
