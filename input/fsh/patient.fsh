@@ -70,7 +70,7 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * identifier[CDCId] ^comment = "CDC ID is the variable to represent the Centers for Disease Control and Prevention assigned ID of the monitoree. This field is determined from CDC’s guidance."
 * identifier[NNDSSId].system = "http://saraalert.org/SaraAlert/nndss-id"
 * identifier[NNDSSId] ^short = "The assigned NNDSS ID or Case ID of the monitoree."
-* identifier[NNDSSId] ^comment = "The NNDSS ID is the variable to represent the assigned NNDSS ID or Case ID of the monitoree. This field is determined from the assigned jurisdiction’s monitoring policies."
+* identifier[NNDSSId] ^comment = "The National Notifiable Diseases Surveillance System (NNDSS) ID is the variable to represent the assigned NNDSS ID or Case ID of the monitoree. This field is determined from the assigned jurisdiction’s monitoring policies."
 
 // Preferred Contact Method Extension
 Extension: PreferredContactMethod
