@@ -1,16 +1,17 @@
 ﻿SaraAlert : Validation Results
 =========================================
 
-err = 1, warn = 30, info = 0
-IG Publisher Version: 1.1.72
-Generated Mon May 17 13:07:09 CDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
+err = 2, warn = 35, info = 0
+IG Publisher Version: 1.1.75 Out of date - current version is 1.1.76
+Generated Wed Jun 30 08:38:22 EDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
 
- Build Errors : 1 / 1 / 0
+ Build Errors : 1 / 3 / 0
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir : 0 / 0 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-notes : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-start-date : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-address-type : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-assigned-user : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-comment : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-contact-attempts : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-continuous-exposure : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-date-of-arrival : 0 / 1 / 1
@@ -20,6 +21,7 @@ Generated Mon May 17 13:07:09 CDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-flight-or-vessel-carrier : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-flight-or-vessel-number : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-full-assigned-jurisdiction-path : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-history-type : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-isolation : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-last-date-of-exposure : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-monitoring-plan : 0 / 1 / 1
@@ -31,16 +33,21 @@ Generated Mon May 17 13:07:09 CDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-immunization : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-observation : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-patient : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-provenance : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-questionnaire-response : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-related-person : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-symptom-onset-date : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-travel-related-notes : 0 / 1 / 1
- /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-SaraAlertLanguage : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-SaraAlertLabResult : 0 / 0 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-SaraAlertLabType : 0 / 0 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-SaraAlertLanguage : 1 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-covid-19-vaccines : 0 / 0 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[26].value: Supressed messages file not found
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/covid-19-vaccines.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SaraAlertLabResult.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SaraAlertLabType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir.json ==
 INFORMATION: ImplementationGuide/saraalert-fhir: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-notes.json ==
@@ -55,6 +62,9 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-assigned-user.json ==
 INFORMATION: StructureDefinition/assigned-user: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/assigned-user'): The Implementation Guide contains no examples for this extension
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-comment.json ==
+INFORMATION: StructureDefinition/comment: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/comment'): The Implementation Guide contains no examples for this extension
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-contact-attempts.json ==
 INFORMATION: StructureDefinition/contact-attempts: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/contact-attempts'): The Implementation Guide contains no examples for this extension
@@ -82,6 +92,9 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-full-assigned-jurisdiction-path.json ==
 INFORMATION: StructureDefinition/full-assigned-jurisdiction-path: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path'): The Implementation Guide contains no examples for this extension
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-history-type.json ==
+INFORMATION: StructureDefinition/history-type: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/history-type'): The Implementation Guide contains no examples for this extension
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-isolation.json ==
 INFORMATION: StructureDefinition/isolation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/isolation'): The Implementation Guide contains no examples for this extension
@@ -115,6 +128,9 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-patient.json ==
 INFORMATION: StructureDefinition/sara-alert-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-patient'): The Implementation Guide contains no examples for this profile
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-provenance.json ==
+INFORMATION: StructureDefinition/sara-alert-provenance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-provenance'): The Implementation Guide contains no examples for this profile
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-sara-alert-questionnaire-response.json ==
 INFORMATION: StructureDefinition/sara-alert-questionnaire-response: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response'): The Implementation Guide contains no examples for this profile
@@ -127,8 +143,13 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-travel-related-notes.json ==
 INFORMATION: StructureDefinition/travel-related-notes: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/travel-related-notes'): The Implementation Guide contains no examples for this extension
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-SaraAlertLabResult.json ==
+INFORMATION: ValueSet/SaraAlertLabResult: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-SaraAlertLabType.json ==
+INFORMATION: ValueSet/SaraAlertLabType: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-SaraAlertLanguage.json ==
 INFORMATION: ValueSet/SaraAlertLanguage: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/SaraAlertLanguage: ValueSet.compose[0].include[0].concept[62]: The code cnr is not valid in the system urn:ietf:bcp:47
+ERROR: ValueSet.where(id = 'SaraAlertLanguage'): Error from server: Access violation at address 0000000000E509F8 in module 'FHIRServer.exe'. Read of address 0000000000000020
 == /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ValueSet-covid-19-vaccines.json ==
 INFORMATION: ValueSet/covid-19-vaccines: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

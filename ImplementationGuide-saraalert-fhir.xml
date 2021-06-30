@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2021-05-17T13:06:35-05:00"/>
+  <date value="2021-06-30T08:37:48-04:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -225,6 +225,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sara-alert-provenance"/>
+      </reference>
+      <name value="Sara Alert Provenance Profile"/>
+      <description value="The Sara Alert Provenance profile represents a monitoree history item."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sara-alert-questionnaire-response"/>
       </reference>
       <name value="Sara Alert QuestionnaireResponse Profile"/>
@@ -284,6 +295,17 @@
       </reference>
       <name value="Assigned User"/>
       <description value="Represents the user or group within a jurisdiction responsible for monitoring a monitoree."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/comment"/>
+      </reference>
+      <name value="Comment"/>
+      <description value="Represents the comment for a monitoree history item."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -383,6 +405,17 @@
       </reference>
       <name value="Full Assigned Jurisdiction Path"/>
       <description value="Represents the jurisdiction in which this monitoree is enrolled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/history-type"/>
+      </reference>
+      <name value="History Type"/>
+      <description value="Represents the history type for a monitoree history item."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -503,6 +536,26 @@
         <reference value="ValueSet/covid-19-vaccines"/>
       </reference>
       <name value="COVID-19 Vaccines Value Set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SaraAlertLabResult"/>
+      </reference>
+      <name value="SaraAlertLabResult"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SaraAlertLabType"/>
+      </reference>
+      <name value="SaraAlertLabType"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

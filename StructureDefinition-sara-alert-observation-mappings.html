@@ -88,19 +88,12 @@
       </div>  <!-- /container -->
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
+
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Sara Alert Observation Profile</b></li>
-          <span style="float:right;">
 
-            <a href="StructureDefinition-sara-alert-observation-definitions.html">&lt;prev</a> | 
-
-            <a href="#bottom">bottom</a>
-
-          | <a href="StructureDefinition-sara-alert-observation.profile.xml.html">next&gt;</a>
-
-          </span>
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -203,7 +196,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>&lt; 445584004 |Report by finality status|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>&lt; 363787002 |Observable entity| OR &lt; 386053000 |Evaluation procedure|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>&lt; 441742003 |Evaluation finding|</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueString)</td><td>&lt; 441742003 |Evaluation finding|</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>&lt; 441742003 |Evaluation finding|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>&lt; 260245000 |Findings values|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>&lt; 123037004 |Body structure|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>&lt; 123038009 |Specimen|</td> </tr>
@@ -232,7 +225,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;issued</td><td>OBR.22 (or MSH.7), or perhaps OBX-19 (depends on who observation made)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>OBX.15 / (Practitioner)  OBX-16,  PRT-5:PRT-4='RO' /  (Device)  OBX-18 , PRT-10:PRT-4='EQUIP' / (Organization)  OBX-23,  PRT-8:PRT-4='PO'</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueString)</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>OBX.2, OBX.5, OBX.6</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>OBX-8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)</td> </tr>
@@ -279,7 +272,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;issued</td><td>participation[typeCode=AUT].time</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>participation[typeCode=PRF]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueString)</td><td>value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;dataAbsentReason</td><td>value.nullFlavor</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>interpretationCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>subjectOf.observationEvent[code=&quot;annotation&quot;].value</td> </tr>
@@ -331,7 +324,7 @@
  <tr><td>Observation</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>116680003 |Is a|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>363714003 |Interprets|</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueString)</td><td>363714003 |Interprets|</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value[x] (valueCodeableConcept)</td><td>363714003 |Interprets|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;interpretation</td><td>363713009 |Has interpretation|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>718497002 |Inherent location|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>704319004 |Inherent in|</td> </tr>
@@ -390,34 +383,14 @@
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
-      <div style="background-color:var(--footer-nav-bg-color)">
-        <table style="width:100%">
-          <tbody>
-            <tr>
-              <td style="text-align:left">&#xA0;
 
-                <a href="StructureDefinition-sara-alert-observation-definitions.html">&lt;prev</a>
-
-              </td>
-              <td style="text-align:center">
-                <a href="#top">top</a>
-              </td>
-              <td style="text-align:right">&#xA0;
-
-                <a href="StructureDefinition-sara-alert-observation.profile.xml.html">next&gt;</a>
-
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://www.mitre.org">The MITRE Corporation</a>.  Package saraalert-fhir#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 17, 2021 13:06-0500">2021-05-17</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.mitre.org">The MITRE Corporation</a>.  Package saraalert-fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 30, 2021 08:37-0400">2021-06-30</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
           </span>
@@ -452,3 +425,4 @@ anchors.add()</script>
   ================================================== -->
   </body>
 </html>
+

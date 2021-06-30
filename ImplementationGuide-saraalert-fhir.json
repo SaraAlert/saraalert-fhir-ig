@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2021-05-17T13:06:35-05:00",
+  "date": "2021-06-30T08:37:48-04:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -349,6 +349,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/sara-alert-provenance"
+        },
+        "name": "Sara Alert Provenance Profile",
+        "description": "The Sara Alert Provenance profile represents a monitoree history item.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/sara-alert-questionnaire-response"
         },
         "name": "Sara Alert QuestionnaireResponse Profile",
@@ -423,6 +437,20 @@
         },
         "name": "Assigned User",
         "description": "Represents the user or group within a jurisdiction responsible for monitoring a monitoree.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/comment"
+        },
+        "name": "Comment",
+        "description": "Represents the comment for a monitoree history item.",
         "exampleBoolean": false
       },
       {
@@ -549,6 +577,20 @@
         },
         "name": "Full Assigned Jurisdiction Path",
         "description": "Represents the jurisdiction in which this monitoree is enrolled.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/history-type"
+        },
+        "name": "History Type",
+        "description": "Represents the history type for a monitoree history item.",
         "exampleBoolean": false
       },
       {
@@ -702,6 +744,32 @@
           "reference": "ValueSet/covid-19-vaccines"
         },
         "name": "COVID-19 Vaccines Value Set",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/SaraAlertLabResult"
+        },
+        "name": "SaraAlertLabResult",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/SaraAlertLabType"
+        },
+        "name": "SaraAlertLabType",
         "exampleBoolean": false
       },
       {

@@ -32,6 +32,13 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/comment",
+      "title": "Comment",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/contact-attempts",
       "title": "Contact Attempts",
       "types": [
@@ -97,6 +104,13 @@
     {
       "url": "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path",
       "title": "Full Assigned Jurisdiction Path",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/history-type",
+      "title": "History Type",
       "types": [
         "string"
       ]
@@ -191,6 +205,12 @@
         "title": "Sara Alert Patient Profile"
       }
     ],
+    "Provenance": [
+      {
+        "url": "http://saraalert.org/StructureDefinition/sara-alert-provenance",
+        "title": "Sara Alert Provenance Profile"
+      }
+    ],
     "QuestionnaireResponse": [
       {
         "url": "http://saraalert.org/StructureDefinition/sara-alert-questionnaire-response",
@@ -272,6 +292,9 @@
       "Patient",
       "RelatedPerson"
     ],
+    "http://saraalert.org/StructureDefinition/comment": [
+      "Provenance"
+    ],
     "http://saraalert.org/StructureDefinition/contact-attempts": [
       "RelatedPerson"
     ],
@@ -298,6 +321,9 @@
     ],
     "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path": [
       "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/history-type": [
+      "Provenance"
     ],
     "http://saraalert.org/StructureDefinition/isolation": [
       "Patient"
