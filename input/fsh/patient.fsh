@@ -24,9 +24,12 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   exposure-notes named exposure-notes 0..1 MS and
   travel-related-notes named travel-related-notes 0..1 MS and
   additional-planned-travel-notes named additional-planned-travel-notes 0..1 MS and
-  continuous-exposure named continuous-exposure 0..1 MS
+  continuous-exposure named continuous-exposure 0..1 MS and
+  follow-up-reason named follow-up-reason 0..1 MS and
+  follow-up-note named follow-up-note 0..1 MS
 * obeys sara-1
 * obeys sara-2
+* obeys sara-3
 * telecom.extension contains phone-type named phone-type 0..1 MS
 * active MS
 * name MS
@@ -191,6 +194,20 @@ Title: "Continuous Exposure"
 Description: "Indicates if a monitoree's exposure to one or more cases is ongoing. This type of exposure means there is no known 'Last Date of Exposure'"
 * value[x] only boolean
 
+// Follow-up Reason
+Extension: FollowUpReason
+Id: follow-up-reason
+Title: "Follow-up Reason"
+Description: "Specifies a reason to follow up on the monitoree (options are: `Deceased`, `Duplicate`, `High-Risk`, `Hospitalized`, `In Need of Follow-up`, `Lost to Follow-up`, `Needs Interpretation`, `Quality Assurance`, `Refused Active Monitoring`, and `Other`)."
+* value[x] only string
+
+// Follow-up Note
+Extension: FollowUpNote
+Id: follow-up-note
+Title: "Follow-up Note"
+Description: "Specifies additional details for the follow-up reason on the monitoree."
+* value[x] only string
+
 // Invariant for Continuous Exposure
 Invariant:  sara-1
 Description: "If 'Continuous Exposure' is set to true, then there shall be no 'Last Date of Exposure'"
@@ -201,4 +218,10 @@ Severity:   #error
 Invariant:  sara-2
 Description: "If 'Continuous Exposure' and 'Isolation' are both set to false, then there shall be a 'Last Date of Exposure'"
 Expression: "extension.where(url='http://saraalert.org/StructureDefinition/continuous-exposure').first().valueBoolean.not() and extension.where(url='http://saraalert.org/StructureDefinition/isolation').first().valueBoolean.not() implies Patient.extension.where(url='http://saraalert.org/StructureDefinition/last-date-of-exposure').first().valueDate.exists()"
+Severity:   #error
+
+// Invariant for Follow-up Note
+Invariant:  sara-3
+Description: "If 'Follow-up Reason' is not set, then there shall be no 'Follow-up Note'"
+Expression: "extension.where(url='http://saraalert.org/StructureDefinition/follow-up-reason').first().valueString.empty().not() implies Patient.extension.where(url='http://saraalert.org/StructureDefinition/follow-up-note').first().valueString.empty()"
 Severity:   #error
