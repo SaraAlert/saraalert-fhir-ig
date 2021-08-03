@@ -27,6 +27,18 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   continuous-exposure named continuous-exposure 0..1 MS and
   follow-up-reason named follow-up-reason 0..1 MS and
   follow-up-note named follow-up-note 0..1 MS
+  exposure-risk-assessment named exposure-risk-assessment 0..1 MS and
+  public-health-action named public-health-action 0..1 MS and
+  extended-isolation named extended-isolation 0..1 MS and
+  contact-of-known-case named contact-of-known-case 0..1 MS and
+  contact-of-known-case-id named contact-of-known-case-id 0..1 MS and
+  common-exposure-cohort-name named common-exposure-cohort-name 0..1 MS and
+  potential-exposure-location named potential-exposure-location 0..1 MS and
+  potential-exposure-country named potential-exposure-country 0..1 MS and
+  end-of-monitoring named end-of-monitoring 0..1 MS and
+  expected-purge-date named expected-purge-date 0..1 MS and
+  reason-for-closure named reason-for-closure 0..1 MS and
+  latest-transfer named latest-transfer 0..1 MS
 * obeys sara-1
 * obeys sara-2
 * obeys sara-3
@@ -49,10 +61,19 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice to distinguish the identifier for State/Local ID."
-* identifier contains StateLocalId 0..1 MS
+* identifier contains
+  StateLocalId 0..1 MS and
+  CDCId 0..1 MS and
+  NNDSSId 0..1 MS
 * identifier[StateLocalId].system = "http://saraalert.org/SaraAlert/state-local-id"
 * identifier[StateLocalId] ^short = "The State/Local ID assigned by the state or jurisdiction’s monitoring policies."
 * identifier[StateLocalId] ^comment = "The State/Local ID is the variable to represent the assigned state or local ID of the monitoree. This field is determined from the assigned state or jurisdiction’s monitoring policies."
+* identifier[CDCId].system = "http://saraalert.org/SaraAlert/cdc-id"
+* identifier[CDCId] ^short = "The identifier to represent the Centers for Disease Control and Prevention assigned ID of the monitoree. "
+* identifier[CDCId] ^comment = "CDC ID is the variable to represent the Centers for Disease Control and Prevention assigned ID of the monitoree. This field is determined from CDC’s guidance."
+* identifier[NNDSSId].system = "http://saraalert.org/SaraAlert/nndss-id"
+* identifier[NNDSSId] ^short = "The assigned NNDSS ID or Case ID of the monitoree."
+* identifier[NNDSSId] ^comment = "The National Notifiable Diseases Surveillance System (NNDSS) ID is the variable to represent the assigned NNDSS ID or Case ID of the monitoree. This field is determined from the assigned jurisdiction’s monitoring policies."
 
 // Preferred Contact Method Extension
 Extension: PreferredContactMethod
@@ -186,6 +207,94 @@ Id: address-type
 Title: "Address Type"
 Description: "Indicates if a monitoree's address is within the USA, or outside of the USA (options are: `USA` and `Foreign`). The extension only has meaning when used on the 'Patient.address' element. If this extension is not present the address is assumed to be within the USA."
 * value[x] only string
+
+// Exposure Risk Assessment
+Extension: ExposureRiskAssessment
+Id: exposure-risk-assessment
+Title: "Exposure Risk Assessment"
+Description: "Indicates the risk assessment of a a monitoree's exposure to disease (options are: `High`, `Medium`, `Low`, `No Identified Risk`)."
+* value[x] only string
+
+// Public Health Action
+Extension: PublicHealthAction
+Id: public-health-action
+Title: "Public Health Action"
+Description: "Indicates the public health recommendation for a monitoree (options are: `None`, `Recommended medical evaluation of symptoms`, `Document results of medical evaluation`, `Recommended laboratory testing`)."
+* value[x] only string
+
+// Extended Isolation
+Extension: ExtendedIsolation
+Id: extended-isolation
+Title: "Extended Isolation"
+Description: "Represents a user-defined date that determines eligibility for a monitoree appearing on the Records Requiring Review linelist."
+* value[x] only date
+
+// Contact of Known Case
+Extension: ContactOfKnownCase
+Id: contact-of-known-case
+Title: "Contact of Known Case"
+Description: "Represents if a monitoree has a known exposure to a confirmed or probable case."
+* value[x] only boolean
+
+// Contact of Known Case Id
+Extension: ContactOfKnownCaseId
+Id: contact-of-known-case-id
+Title: "Contact of Known Case Id"
+Description: "Indicates the case ID of the probable or confirmed case that a monitoree had exposure to. Any sort of identifier can be used here."
+* value[x] only string
+
+// Common Exposure Cohort Name
+Extension: CommonExposureCohortName
+Id: common-exposure-cohort-name
+Title: "Common Exposure Cohort Name"
+Description: "Indicates the name of a cohort that a monitoree shares common exposure with."
+* value[x] only string
+
+// Potential Exposure Location
+Extension: PotentialExposureLocation
+Id: potential-exposure-location
+Title: "Potential Exposure Location"
+Description: "Represents a description of the location where the monitoree was potentially last exposed to a case."
+* value[x] only string
+
+// Potential Exposure Country
+Extension: PotentialExposureCountry
+Id: potential-exposure-country
+Title: "Potential Exposure Country"
+Description: "Represents a description of the country where the monitoree was potentially last exposed to a case."
+* value[x] only string
+
+// End of Monitoring
+Extension: EndOfMonitoring
+Id: end-of-monitoring
+Title: "End of Monitoring"
+Description: "Represents the system calculated end of monitoring period. This field is read-only."
+* value[x] only date
+
+// Expected Purge Date
+Extension: ExpectedPurgeDate
+Id: expected-purge-date
+Title: "Expected Purge Date"
+Description: "Represents the date and time that the monitoree's identifiers will be eligible to be purged from the system. This field is read-only."
+* value[x] only date
+
+// Reason for Closure
+Extension: ReasonForClosure
+Id: reason-for-closure
+Title: "Reason for Closure"
+Description: "Represents the reason a monitoree was closed by the user or system. This field is read-only."
+* value[x] only string
+
+// Latest Transfer
+Extension: LatestTransfer
+Id: latest-transfer
+Title: "Latest Transfer"
+Description: "Represents the latest transfer that occurred for the monitoree. This field is read-only."
+* extension contains
+  transferred-at 0..1 MS and 
+  transferred-from 0..1 MS
+* extension[transferred-at].value[x] only dateTime
+* extension[transferred-from].value[x] only string
 
 // Continuous Exposure
 Extension: ContinuousExposure
