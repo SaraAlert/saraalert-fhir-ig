@@ -20,6 +20,14 @@ ValueSet: SaraAlertLabType
 * NULL#OTH
 * NULL#UNK
 
+ValueSet: SaraAlertSexualOrientation
+* SNO#38628009
+* SNO#20430005
+* SNO#42035005
+* NULL#OTH
+* NULL#UNK
+* NULL#ASKU
+
 ValueSet: SaraAlertLanguage
 Title: "Sara Alert Language ValueSet"
 Description: """
