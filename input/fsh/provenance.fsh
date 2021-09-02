@@ -11,7 +11,8 @@ Description: "The Sara Alert Provenance profile represents a monitoree history i
 * agent.onBehalfOf MS
 * extension contains
     comment named comment 0..1 MS and
-    history-type named history-type 0..1 MS
+    history-type named history-type 0..1 MS and
+    original-id named original-id 0..1 MS
 
 // Comment Extension
 Extension: Comment
@@ -27,3 +28,9 @@ Title: "History Type"
 Description: "Represents the history type for a monitoree history item."
 * value[x] only string
 
+// Original ID
+Extension: OriginalID
+Id: original-id
+Title: "Original ID"
+Description: "Indicates the id of the original comment before any edits were made. This field is read-only."
+* value[x] only positiveInt

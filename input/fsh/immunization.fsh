@@ -19,6 +19,7 @@ Description: "The Sara Alert Immunization profile represents a vaccination of a 
 * protocolApplied.targetDisease = CVX#213
 * protocolApplied.doseNumber[x] only string
 * protocolApplied.doseNumberString MS
+* extension contains created-at named created-at 0..1 MS
 
 
 ValueSet: COVID19VaccinesValueSet
@@ -28,3 +29,10 @@ Title: "COVID-19 Vaccines Value Set"
 * CVX#208 "Pfizer COVID-19 Vaccine"
 * CVX#212 "Janssen COVID-19 Vaccine"
 * NULL#UNK "unknown"
+
+// Created At
+Extension: CreatedAt
+Id: created-at
+Title: "Created At"
+Description: "This field represents the date and time that a resource was created in the system. This field is read-only."
+* value[x] only dateTime

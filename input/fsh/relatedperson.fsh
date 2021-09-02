@@ -16,7 +16,8 @@ Description: "The Sara Alert RelatedPerson profile represents a close contact of
   assigned-user named assigned-user 0..1 MS and
   notes named notes 0..1 MS and
   contact-attempts named contact-attempts 0..1 MS and
-  enrolled-patient named enrolled-patient 0..1 MS
+  enrolled-patient named enrolled-patient 0..1 MS and
+  created-at named created-at 0..1 MS
 
 // Notes Extension
 Extension: Notes

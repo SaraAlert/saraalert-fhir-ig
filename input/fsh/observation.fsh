@@ -23,3 +23,4 @@ Description: "The Sara Alert Observation profile represents a monitoree lab resu
 * value[x] only CodeableConcept
 * valueCodeableConcept MS
 * valueCodeableConcept from SaraAlertLabResult (required)
+* extension contains created-at named created-at 0..1 MS
