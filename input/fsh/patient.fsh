@@ -58,7 +58,7 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   source-of-report named source-of-report 0..1 MS
 * obeys sara-1
 * obeys sara-2
-* obeys sara-3
+* obeys sara-4
 * telecom.extension contains phone-type named phone-type 0..1 MS
 * active MS
 * name MS
@@ -557,7 +557,7 @@ Expression: "extension.where(url='http://saraalert.org/StructureDefinition/conti
 Severity:   #error
 
 // Invariant for Follow-up Note
-Invariant:  sara-3
+Invariant:  sara-4
 Description: "If 'Follow-up Reason' is not set, then there shall be no 'Follow-up Note'"
 Expression: "extension.where(url='http://saraalert.org/StructureDefinition/follow-up-reason').first().valueString.empty().not() implies Patient.extension.where(url='http://saraalert.org/StructureDefinition/follow-up-note').first().valueString.empty()"
 Severity:   #error

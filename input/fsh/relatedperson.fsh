@@ -42,7 +42,7 @@ Description: "References the monitoree that corresponds to the close contact, if
 * valueReference only Reference(Patient)
 * valueReference.reference 1..1 MS
 
-// Invariant for Continuous Exposure
+// Invariant for Name
 Invariant:  sara-3
 Description: "At least one name should be given for identification."
 Expression: "(family | given).exists()"
