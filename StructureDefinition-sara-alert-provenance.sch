@@ -14,6 +14,7 @@
     <sch:rule context="f:Provenance">
       <sch:assert test="count(f:extension[@url = 'http://saraalert.org/StructureDefinition/comment']) &lt;= 1">extension with URL = 'http://saraalert.org/StructureDefinition/comment': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://saraalert.org/StructureDefinition/history-type']) &lt;= 1">extension with URL = 'http://saraalert.org/StructureDefinition/history-type': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://saraalert.org/StructureDefinition/original-id']) &lt;= 1">extension with URL = 'http://saraalert.org/StructureDefinition/original-id': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:target) &lt;= 1">target: maximum cardinality of 'target' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -109,6 +110,8 @@
     <sch:rule context="f:Provenance/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

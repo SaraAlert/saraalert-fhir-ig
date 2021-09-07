@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2021-06-30T08:37:48-04:00"/>
+  <date value="2021-09-07T08:24:04-04:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -258,10 +258,65 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/additional-planned-travel-destination"/>
+      </reference>
+      <name value="Additional Planned Travel Destination"/>
+      <description value="Represents destination of the monitoree’s planned travel. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/additional-planned-travel-destination-country"/>
+      </reference>
+      <name value="Additional Planned Travel Destination Country"/>
+      <description value="Represents destination country of the monitoree’s planned travel. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/additional-planned-travel-destination-state"/>
+      </reference>
+      <name value="Additional Planned Travel Destination State"/>
+      <description value="Represents destination state of the monitoree’s planned travel. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/additional-planned-travel-end-date"/>
+      </reference>
+      <name value="Additional Planned Travel End Date"/>
+      <description value="Represents the date that the monitoree is planning to end their additional travel. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/additional-planned-travel-notes"/>
       </reference>
       <name value="Additional Planned Travel Notes"/>
-      <description value="Represents any additional notes about the monitoree&#x2019;s planned travel. This can include details about the nature of the trip, planned social interaction, additional destinations, etc."/>
+      <description value="Represents any additional notes about the monitoree’s planned travel. This can include details about the nature of the trip, planned social interaction, additional destinations, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/additional-planned-travel-port-of-departure"/>
+      </reference>
+      <name value="Additional Planned Travel Port of Departure"/>
+      <description value="Represents the airport, station, or docking point that the monitoree is planning to travel from. This field is read-only."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -273,6 +328,17 @@
       </reference>
       <name value="Additional Planned Travel Start Date"/>
       <description value="Represents the date that the monitoree is planning to begin their additional travel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/additional-planned-travel-type"/>
+      </reference>
+      <name value="Additional Planned Travel Type"/>
+      <description value="Represents type of additional planned travel the monitoree has reported (options are: `Domestic` and `International`). This field is read-only."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -302,6 +368,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/case-status"/>
+      </reference>
+      <name value="Case Status"/>
+      <description value="Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`). This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/closed-at"/>
+      </reference>
+      <name value="Closed At"/>
+      <description value="Represents the date and time that a monitoree was manually closed by a user or automatically closed by the system. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/comment"/>
       </reference>
       <name value="Comment"/>
@@ -324,10 +412,43 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/contact-of-known-case"/>
+      </reference>
+      <name value="Contact Of Known Case"/>
+      <description value="Represents whether or not a monitoree has known exposure to a probable or confirmed case. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/continuous-exposure"/>
       </reference>
       <name value="Continuous Exposure"/>
       <description value="Indicates if a monitoree&#39;s exposure to one or more cases is ongoing. This type of exposure means there is no known &#39;Last Date of Exposure&#39;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/created-at"/>
+      </reference>
+      <name value="Created At"/>
+      <description value="This field represents the date and time that a resource was created in the system. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/crew-on-passenger-or-cargo-flight"/>
+      </reference>
+      <name value="Crew on Passenger or Cargo Flight"/>
+      <description value="Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane. This field is read-only."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -357,6 +478,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/end-of-monitoring"/>
+      </reference>
+      <name value="End of Monitoring"/>
+      <description value="Represents the system calculated end of monitoring period. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/enrolled-patient"/>
       </reference>
       <name value="Enrolled Patient"/>
@@ -368,10 +500,54 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/expected-purge-date"/>
+      </reference>
+      <name value="Expected Purge Date"/>
+      <description value="Represents the date and time that the monitoree&#39;s identifiers will be eligible to be purged from the system. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/exposure-notes"/>
       </reference>
       <name value="Exposure Notes"/>
-      <description value="Represents any additional notes about the monitoree&#x2019;s exposure history or case information history. This can include details about the interaction with a known case, high risk activities, common exposure, etc."/>
+      <description value="Represents any additional notes about the monitoree’s exposure history or case information history. This can include details about the interaction with a known case, high risk activities, common exposure, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/exposure-risk-assessment"/>
+      </reference>
+      <name value="Exposure Risk Assessment"/>
+      <description value="Indicates the risk assessment of a a monitoree&#39;s exposure to disease (options are: `High`, `Medium`, `Low`, `No Identified Risk`)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/exposure-risk-factors"/>
+      </reference>
+      <name value="Exposure Risk Factors"/>
+      <description value="Represents the exposure risk factors for the monitoree. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extended-isolation"/>
+      </reference>
+      <name value="Extended Isolation"/>
+      <description value="Represents a user-defined date that determines eligibility for a monitoree appearing on the Records Requiring Review linelist."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -401,10 +577,54 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/follow-up-note"/>
+      </reference>
+      <name value="Follow-up Note"/>
+      <description value="Specifies additional details for the follow-up reason on the monitoree."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/follow-up-reason"/>
+      </reference>
+      <name value="Follow-up Reason"/>
+      <description value="Specifies a reason to follow up on the monitoree (options are: `Deceased`, `Duplicate`, `High-Risk`, `Hospitalized`, `In Need of Follow-up`, `Lost to Follow-up`, `Needs Interpretation`, `Quality Assurance`, `Refused Active Monitoring`, and `Other`)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/full-assigned-jurisdiction-path"/>
       </reference>
       <name value="Full Assigned Jurisdiction Path"/>
       <description value="Represents the jurisdiction in which this monitoree is enrolled."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/head-of-household"/>
+      </reference>
+      <name value="Head of Household"/>
+      <description value="This field indicates if the monitoree is a head of household. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/healthcare-personnel"/>
+      </reference>
+      <name value="Healthcare Personnel"/>
+      <description value="Represents whether or not a monitoree works in a healthcare facility. This field is read-only."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -423,6 +643,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/id-of-reporter"/>
+      </reference>
+      <name value="ID of Reporter"/>
+      <description value="Represents the ID of the monitoree that is responsible of reporting on a monitoree’s behalf. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/isolation"/>
       </reference>
       <name value="Isolation"/>
@@ -434,10 +665,43 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/laboratory-personnel"/>
+      </reference>
+      <name value="Laboratory Personnel"/>
+      <description value="Represents whether or not a monitoree works in a laboratory or testing facility. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/last-assessment-reminder-sent"/>
+      </reference>
+      <name value="Last Assessment Reminder Sent"/>
+      <description value="This field represents the date and time that a report reminder was last sent to a monitoree. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/last-date-of-exposure"/>
       </reference>
       <name value="Last Date of Exposure"/>
       <description value="When the monitoree`s last exposure occurred for use in the Sara Alert exposure workflow."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/member-of-a-common-exposure-cohort"/>
+      </reference>
+      <name value="Member of a Common Exposure Cohort"/>
+      <description value="Represents whether or not a monitoree was exposed via a common source or gathering. This field is read-only."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -467,10 +731,43 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/original-id"/>
+      </reference>
+      <name value="Original ID"/>
+      <description value="Indicates the id of the original comment before any edits were made. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/paused-notifications"/>
+      </reference>
+      <name value="Paused Notifications"/>
+      <description value="This field indicates if the monitoree has notifications paused. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/phone-type"/>
       </reference>
       <name value="Phone Type"/>
-      <description value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree&#x2019;s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
+      <description value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/port-of-entry-into-usa"/>
+      </reference>
+      <name value="Port of Entry into USA"/>
+      <description value="Represents the U.S. airport, station, or docking point that the monitoree traveled to in order to enter the United States. This field is read-only."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -482,6 +779,28 @@
       </reference>
       <name value="Port of Origin"/>
       <description value="Represents the airport, station, or docking point that the monitoree traveled from."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/potential-exposure-country"/>
+      </reference>
+      <name value="Potential Exposure Country"/>
+      <description value="Represents a description of the country where the monitoree was potentially last exposed to a case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/potential-exposure-location"/>
+      </reference>
+      <name value="Potential Exposure Location"/>
+      <description value="Represents a description of the location where the monitoree was potentially last exposed to a case."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -511,6 +830,61 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/public-health-action"/>
+      </reference>
+      <name value="Public Health Action"/>
+      <description value="Indicates the public health recommendation for a monitoree (options are: `None`, `Recommended medical evaluation of symptoms`, `Document results of medical evaluation`, `Recommended laboratory testing`)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reason-for-closure"/>
+      </reference>
+      <name value="Reason for Closure"/>
+      <description value="Represents the reason a monitoree was closed by the user or system. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sexual-orientation"/>
+      </reference>
+      <name value="Sexual Orientation"/>
+      <description value="Represents how the monitoree characterizes their attraction to others. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/source-of-report"/>
+      </reference>
+      <name value="Source Of Report"/>
+      <description value="Represents where initial information about the monitoree’s exposure or illness was obtained from. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/status"/>
+      </reference>
+      <name value="Status"/>
+      <description value="For monitorees in the Exposure workflow, this field represents the line list, where the monitoree&#xA;is being monitored (options are: `asymptomatic`, `symptomatic`, `non reporting`, `under investigation = PUI`, and `closed`).&#xA;&#xA;For monitorees in the Isolation workflow, this field represents the monitoree’s preliminarily met&#xA;recovery definition. If the monitoree has not met a preliminary recovery definition,&#xA;then this field indicates the line list where the monitoree is being monitored&#xA;(options are: `symp non test based`, `asymp non test based`, `test based`, `reporting`, `non reporting`, and `closed`).&#xA;This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/symptom-onset-date"/>
       </reference>
       <name value="Symptom Onset Date"/>
@@ -522,10 +896,76 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/symptomatic"/>
+      </reference>
+      <name value="Symptomatic"/>
+      <description value="This field indicates if the monitoree has reported symptoms that need review by a public health user. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/transfer"/>
+      </reference>
+      <name value="Transfer"/>
+      <description value="Represents a transfer event involving the monitoree. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/travel-from-affected-country-or-area"/>
+      </reference>
+      <name value="Travel From Affected Country or Area"/>
+      <description value="Represents whether or not a monitoree traveled from a country or area with a high prevalence of disease within the exposure period. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/travel-related-notes"/>
       </reference>
       <name value="Travel Related Notes"/>
-      <description value="Represents any additional notes about the monitoree&#x2019;s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc."/>
+      <description value="Represents any additional notes about the monitoree’s travel history. This can include details about the nature of the trip, contact with anyone symptomatic, original country departed from, etc."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/user-defined-symptom-onset"/>
+      </reference>
+      <name value="User Defined Symptom Onset"/>
+      <description value="This field indicates if a user manually defined symptom onset for the monitoree. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/was-in-health-care-facility-with-known-cases"/>
+      </reference>
+      <name value="Was in Health Care Facility with Known Cases"/>
+      <description value="Represents whether or not a monitoree entered or was treated in a health care facility that had known cases. This field is read-only."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/who-reported"/>
+      </reference>
+      <name value="Who Reported"/>
+      <description value="System assigned value for the monitoree or user that submitted a report. This field is read-only."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -567,6 +1007,16 @@
       </reference>
       <name value="Sara Alert Language ValueSet"/>
       <description value="This ValueSet lists the allowed values for setting &quot;Primary Language&quot; and &quot;Secondary Language&quot;&#xA;in Sara Alert. Either the &quot;Code&quot; value or the &quot;Display&quot; value may be used. In cases where the 2-letter&#xA;ISO 639-1 code is listed, the corresponding 3-letter ISO 639-2 code may also be used."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SaraAlertSexualOrientation"/>
+      </reference>
+      <name value="SaraAlertSexualOrientation"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

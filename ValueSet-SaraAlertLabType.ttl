@@ -16,7 +16,7 @@
   fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "SaraAlertLabType"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-06-30T08:37:48-04:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-09-07T08:24:04-04:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "The MITRE Corporation"];
   fhir:ValueSet.contact [
      fhir:index 0;

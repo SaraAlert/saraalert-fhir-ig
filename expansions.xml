@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="36d6ea98-fc07-417b-b35f-7e04d4fbb901"/>
+  <id value="f2156934-6777-43bf-8e8c-0a7be9f8c2a0"/>
   <meta>
-    <lastUpdated value="2021-06-30T08:37:48.647-04:00"/>
+    <lastUpdated value="2021-09-07T08:24:04.881-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -21,7 +21,7 @@
                 <li>
                   <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
                 </li>
-                <li>SNOMED CT International edition 31-Jan 2021</li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
               </ul>
             </div>
             <table class="codes">
@@ -86,7 +86,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <version value="1.0.0"/>
         <name value="SaraAlertLabResult"/>
         <status value="active"/>
-        <date value="2021-06-30T08:37:48-04:00"/>
+        <date value="2021-09-07T08:24:04-04:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -96,8 +96,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:a244ebdb-8c1e-4e9d-833e-91a5ebe7b528"/>
-          <timestamp value="2021-06-30T08:38:01-04:00"/>
+          <identifier value="urn:uuid:3a72aaf4-84e2-4849-a69c-396c144e53df"/>
+          <timestamp value="2021-09-07T08:24:21-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -109,7 +109,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -140,6 +140,172 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://saraalert.org/ValueSet/SaraAlertSexualOrientation"/>
+    <resource>
+      <ValueSet>
+        <id value="SaraAlertSexualOrientation"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT International edition 31-Jul 2021</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-38628009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=38628009">38628009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Homosexuality</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-20430005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=20430005">20430005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Heterosexual state</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-42035005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=42035005">42035005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Bisexual state</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>
+                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>other</td>
+                <td>**Description:**The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g., concept not provided by required code system).
+
+**Usage Notes**: This flavor and its specializations are most commonly used with the CD datatype and its flavors. However, it may apply to \*any\* datatype where the constraints of the type are tighter than can be conveyed. For example, a PQ that is for a true measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT, etc.
+
+With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE. By definition, all local codes and original text are part of the value set if the coding strength is CWE.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>
+                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>unknown</td>
+                <td>**Description:**A proper value is applicable, but not known.
+
+**Usage Notes**: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+
+1.  Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys &#39;unknown&#39;)
+2.  Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-ASKU"> </a>
+                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU">ASKU</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>asked but unknown</td>
+                <td>Information was sought but not found (e.g., patient was asked but didn&#39;t know)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://saraalert.org/ValueSet/SaraAlertSexualOrientation"/>
+        <version value="1.0.0"/>
+        <name value="SaraAlertSexualOrientation"/>
+        <status value="active"/>
+        <date value="2021-09-07T08:24:04-04:00"/>
+        <publisher value="The MITRE Corporation"/>
+        <contact>
+          <name value="The MITRE Corporation"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.mitre.org"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:b9b4bb7d-75ce-4abb-b239-5f35c6b29734"/>
+          <timestamp value="2021-09-07T08:24:22-04:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="38628009"/>
+            <display value="Homosexuality"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="20430005"/>
+            <display value="Heterosexual state"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42035005"/>
+            <display value="Bisexual state"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="OTH"/>
+            <display value="other"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="unknown"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="ASKU"/>
+            <display value="asked but unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://saraalert.org/ValueSet/SaraAlertLabType"/>
     <resource>
       <ValueSet>
@@ -151,7 +317,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
-                <li>Loinc v2.69</li>
+                <li>Loinc v2.71</li>
                 <li>
                   <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
                 </li>
@@ -260,7 +426,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <version value="1.0.0"/>
         <name value="SaraAlertLabType"/>
         <status value="active"/>
-        <date value="2021-06-30T08:37:48-04:00"/>
+        <date value="2021-09-07T08:24:04-04:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -270,8 +436,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:9ee99e57-ae5b-4eba-b891-2291736bac8f"/>
-          <timestamp value="2021-06-30T08:38:04-04:00"/>
+          <identifier value="urn:uuid:d2326487-2167-46ac-bd80-683a584a795c"/>
+          <timestamp value="2021-09-07T08:24:25-04:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -283,7 +449,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://loinc.org|2.69"/>
+            <valueString value="http://loinc.org|2.71"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -412,7 +578,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="COVID19VaccinesValueSet"/>
         <title value="COVID-19 Vaccines Value Set"/>
         <status value="active"/>
-        <date value="2021-06-30T08:37:48-04:00"/>
+        <date value="2021-09-07T08:24:04-04:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -422,8 +588,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:6dfc67c7-a7cf-4582-ba37-09defc48478f"/>
-          <timestamp value="2021-06-30T08:38:06-04:00"/>
+          <identifier value="urn:uuid:068a2475-15b2-478d-9777-5b37914cd53f"/>
+          <timestamp value="2021-09-07T08:24:27-04:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

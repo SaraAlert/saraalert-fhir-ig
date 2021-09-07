@@ -10,7 +10,7 @@
   <name value="SaraAlertLanguage"/>
   <title value="Sara Alert Language ValueSet"/>
   <status value="active"/>
-  <date value="2021-06-30T08:37:48-04:00"/>
+  <date value="2021-09-07T08:24:04-04:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -981,7 +981,7 @@
       </concept>
       <concept>
         <code value="nb"/>
-        <display value="Norwegian Bokm&#xE5;l"/>
+        <display value="Norwegian Bokmål"/>
       </concept>
       <concept>
         <code value="nog"/>

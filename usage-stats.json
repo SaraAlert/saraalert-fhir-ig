@@ -4,8 +4,43 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-destination",
+      "title": "Additional Planned Travel Destination",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-destination-country",
+      "title": "Additional Planned Travel Destination Country",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-destination-state",
+      "title": "Additional Planned Travel Destination State",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-end-date",
+      "title": "Additional Planned Travel End Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-notes",
       "title": "Additional Planned Travel Notes",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-port-of-departure",
+      "title": "Additional Planned Travel Port of Departure",
       "types": [
         "string"
       ]
@@ -15,6 +50,13 @@
       "title": "Additional Planned Travel Start Date",
       "types": [
         "date"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-type",
+      "title": "Additional Planned Travel Type",
+      "types": [
+        "string"
       ]
     },
     {
@@ -32,6 +74,20 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/case-status",
+      "title": "Case Status",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/closed-at",
+      "title": "Closed At",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/comment",
       "title": "Comment",
       "types": [
@@ -46,8 +102,80 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/contact-of-known-case",
+      "title": "Contact Of Known Case",
+      "types": [
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/continuous-exposure",
       "title": "Continuous Exposure",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/created-at",
+      "title": "Created At",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/crew-on-passenger-or-cargo-flight",
+      "title": "Crew on Passenger or Cargo Flight",
       "types": [
         "boolean"
       ]
@@ -67,6 +195,13 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/end-of-monitoring",
+      "title": "End of Monitoring",
+      "types": [
+        "date"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/enrolled-patient",
       "title": "Enrolled Patient",
       "types": [
@@ -81,10 +216,87 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/expected-purge-date",
+      "title": "Expected Purge Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/exposure-notes",
       "title": "Exposure Notes",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/exposure-risk-assessment",
+      "title": "Exposure Risk Assessment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/exposure-risk-factors",
+      "title": "Exposure Risk Factors",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/extended-isolation",
+      "title": "Extended Isolation",
+      "types": [
+        "date"
       ]
     },
     {
@@ -102,10 +314,89 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/follow-up-note",
+      "title": "Follow-up Note",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/follow-up-reason",
+      "title": "Follow-up Reason",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path",
       "title": "Full Assigned Jurisdiction Path",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/head-of-household",
+      "title": "Head of Household",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/healthcare-personnel",
+      "title": "Healthcare Personnel",
+      "types": [
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -116,6 +407,13 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/id-of-reporter",
+      "title": "ID of Reporter",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/isolation",
       "title": "Isolation",
       "types": [
@@ -123,10 +421,133 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/laboratory-personnel",
+      "title": "Laboratory Personnel",
+      "types": [
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/last-assessment-reminder-sent",
+      "title": "Last Assessment Reminder Sent",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/last-date-of-exposure",
       "title": "Last Date of Exposure",
       "types": [
         "date"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/member-of-a-common-exposure-cohort",
+      "title": "Member of a Common Exposure Cohort",
+      "types": [
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -144,6 +565,20 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/original-id",
+      "title": "Original ID",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/paused-notifications",
+      "title": "Paused Notifications",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/phone-type",
       "title": "Phone Type",
       "types": [
@@ -151,8 +586,29 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/port-of-entry-into-usa",
+      "title": "Port of Entry into USA",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/port-of-origin",
       "title": "Port of Origin",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/potential-exposure-country",
+      "title": "Potential Exposure Country",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/potential-exposure-location",
+      "title": "Potential Exposure Location",
       "types": [
         "string"
       ]
@@ -172,6 +628,93 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/public-health-action",
+      "title": "Public Health Action",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/reason-for-closure",
+      "title": "Reason for Closure",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/sexual-orientation",
+      "title": "Sexual Orientation",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/source-of-report",
+      "title": "Source Of Report",
+      "types": [
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/status",
+      "title": "Status",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/symptom-onset-date",
       "title": "Symptom Onset Date",
       "types": [
@@ -179,8 +722,156 @@
       ]
     },
     {
+      "url": "http://saraalert.org/StructureDefinition/symptomatic",
+      "title": "Symptomatic",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/transfer",
+      "title": "Transfer",
+      "types": [
+        "positiveInt",
+        "dateTime",
+        "dateTime",
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/travel-from-affected-country-or-area",
+      "title": "Travel From Affected Country or Area",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://saraalert.org/StructureDefinition/travel-related-notes",
       "title": "Travel Related Notes",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/user-defined-symptom-onset",
+      "title": "User Defined Symptom Onset",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/was-in-health-care-facility-with-known-cases",
+      "title": "Was in Health Care Facility with Known Cases",
+      "types": [
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://saraalert.org/StructureDefinition/who-reported",
+      "title": "Who Reported",
       "types": [
         "string"
       ]
@@ -243,6 +934,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -279,10 +973,28 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
+    "http://saraalert.org/StructureDefinition/additional-planned-travel-destination": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/additional-planned-travel-destination-country": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/additional-planned-travel-destination-state": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/additional-planned-travel-end-date": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/additional-planned-travel-notes": [
       "Patient"
     ],
+    "http://saraalert.org/StructureDefinition/additional-planned-travel-port-of-departure": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/additional-planned-travel-start-date": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/additional-planned-travel-type": [
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/address-type": [
@@ -292,14 +1004,32 @@
       "Patient",
       "RelatedPerson"
     ],
+    "http://saraalert.org/StructureDefinition/case-status": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/closed-at": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/comment": [
       "Provenance"
     ],
     "http://saraalert.org/StructureDefinition/contact-attempts": [
       "RelatedPerson"
     ],
+    "http://saraalert.org/StructureDefinition/contact-of-known-case": [
+      "Extension"
+    ],
     "http://saraalert.org/StructureDefinition/continuous-exposure": [
       "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/created-at": [
+      "Immunization",
+      "Observation",
+      "QuestionnaireResponse",
+      "RelatedPerson"
+    ],
+    "http://saraalert.org/StructureDefinition/crew-on-passenger-or-cargo-flight": [
+      "Extension"
     ],
     "http://saraalert.org/StructureDefinition/date-of-arrival": [
       "Patient"
@@ -307,10 +1037,25 @@
     "http://saraalert.org/StructureDefinition/date-of-departure": [
       "Patient"
     ],
+    "http://saraalert.org/StructureDefinition/end-of-monitoring": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/enrolled-patient": [
       "RelatedPerson"
     ],
+    "http://saraalert.org/StructureDefinition/expected-purge-date": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/exposure-notes": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/exposure-risk-assessment": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/exposure-risk-factors": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/extended-isolation": [
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/flight-or-vessel-carrier": [
@@ -319,18 +1064,42 @@
     "http://saraalert.org/StructureDefinition/flight-or-vessel-number": [
       "Patient"
     ],
+    "http://saraalert.org/StructureDefinition/follow-up-note": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/follow-up-reason": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path": [
       "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/head-of-household": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/healthcare-personnel": [
+      "Extension"
     ],
     "http://saraalert.org/StructureDefinition/history-type": [
       "Provenance"
     ],
+    "http://saraalert.org/StructureDefinition/id-of-reporter": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/isolation": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/laboratory-personnel": [
+      "Extension"
+    ],
+    "http://saraalert.org/StructureDefinition/last-assessment-reminder-sent": [
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/last-date-of-exposure": [
       "Patient",
       "RelatedPerson"
+    ],
+    "http://saraalert.org/StructureDefinition/member-of-a-common-exposure-cohort": [
+      "Extension"
     ],
     "http://saraalert.org/StructureDefinition/monitoring-plan": [
       "Patient"
@@ -338,10 +1107,25 @@
     "http://saraalert.org/StructureDefinition/notes": [
       "RelatedPerson"
     ],
+    "http://saraalert.org/StructureDefinition/original-id": [
+      "Provenance"
+    ],
+    "http://saraalert.org/StructureDefinition/paused-notifications": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/phone-type": [
       "Patient.telecom"
     ],
+    "http://saraalert.org/StructureDefinition/port-of-entry-into-usa": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/port-of-origin": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/potential-exposure-country": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/potential-exposure-location": [
       "Patient"
     ],
     "http://saraalert.org/StructureDefinition/preferred-contact-method": [
@@ -350,11 +1134,44 @@
     "http://saraalert.org/StructureDefinition/preferred-contact-time": [
       "Patient"
     ],
+    "http://saraalert.org/StructureDefinition/public-health-action": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/reason-for-closure": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/sexual-orientation": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/source-of-report": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/status": [
+      "Patient"
+    ],
     "http://saraalert.org/StructureDefinition/symptom-onset-date": [
       "Patient"
     ],
+    "http://saraalert.org/StructureDefinition/symptomatic": [
+      "QuestionnaireResponse"
+    ],
+    "http://saraalert.org/StructureDefinition/transfer": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/travel-from-affected-country-or-area": [
+      "Extension"
+    ],
     "http://saraalert.org/StructureDefinition/travel-related-notes": [
       "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/user-defined-symptom-onset": [
+      "Patient"
+    ],
+    "http://saraalert.org/StructureDefinition/was-in-health-care-facility-with-known-cases": [
+      "Extension"
+    ],
+    "http://saraalert.org/StructureDefinition/who-reported": [
+      "QuestionnaireResponse"
     ]
   }
 }

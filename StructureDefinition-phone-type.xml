@@ -14,7 +14,7 @@
   <name value="PhoneType"/>
   <title value="Phone Type"/>
   <status value="active"/>
-  <date value="2021-06-30T08:37:48-04:00"/>
+  <date value="2021-09-07T08:24:04-04:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -23,7 +23,7 @@
       <value value="http://www.mitre.org"/>
     </telecom>
   </contact>
-  <description value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree&#x2019;s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
+  <description value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>
@@ -43,7 +43,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Phone Type"/>
-      <definition value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree&#x2019;s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
+      <definition value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -197,7 +197,7 @@
     <element id="Extension">
       <path value="Extension"/>
       <short value="Phone Type"/>
-      <definition value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree&#x2019;s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
+      <definition value="Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."/>
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension"/>

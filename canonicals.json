@@ -7,6 +7,34 @@
     "name": "SaraAlert"
   },
   {
+    "id": "additional-planned-travel-destination",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-destination",
+    "version": "1.0.0",
+    "name": "AdditionalPlannedTravelDestination"
+  },
+  {
+    "id": "additional-planned-travel-destination-country",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-destination-country",
+    "version": "1.0.0",
+    "name": "AdditionalPlannedTravelDestinationCountry"
+  },
+  {
+    "id": "additional-planned-travel-destination-state",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-destination-state",
+    "version": "1.0.0",
+    "name": "AdditionalPlannedTravelDestinationState"
+  },
+  {
+    "id": "additional-planned-travel-end-date",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-end-date",
+    "version": "1.0.0",
+    "name": "AdditionalPlannedTravelEndDate"
+  },
+  {
     "id": "additional-planned-travel-notes",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-notes",
@@ -14,11 +42,25 @@
     "name": "AdditionalPlannedTravelNotes"
   },
   {
+    "id": "additional-planned-travel-port-of-departure",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-port-of-departure",
+    "version": "1.0.0",
+    "name": "AdditionalPlannedTravelPortOfDeparture"
+  },
+  {
     "id": "additional-planned-travel-start-date",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-start-date",
     "version": "1.0.0",
     "name": "AdditionalPlannedTravelStartDate"
+  },
+  {
+    "id": "additional-planned-travel-type",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/additional-planned-travel-type",
+    "version": "1.0.0",
+    "name": "AdditionalPlannedTravelType"
   },
   {
     "id": "address-type",
@@ -35,6 +77,20 @@
     "name": "AssignedUser"
   },
   {
+    "id": "case-status",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/case-status",
+    "version": "1.0.0",
+    "name": "CaseStatus"
+  },
+  {
+    "id": "closed-at",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/closed-at",
+    "version": "1.0.0",
+    "name": "ClosedAt"
+  },
+  {
     "id": "comment",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/comment",
@@ -49,11 +105,32 @@
     "name": "ContactAttempts"
   },
   {
+    "id": "contact-of-known-case",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/contact-of-known-case",
+    "version": "1.0.0",
+    "name": "ContactOfKnownCase"
+  },
+  {
     "id": "continuous-exposure",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/continuous-exposure",
     "version": "1.0.0",
     "name": "ContinuousExposure"
+  },
+  {
+    "id": "created-at",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/created-at",
+    "version": "1.0.0",
+    "name": "CreatedAt"
+  },
+  {
+    "id": "crew-on-passenger-or-cargo-flight",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/crew-on-passenger-or-cargo-flight",
+    "version": "1.0.0",
+    "name": "CrewOnPassengerOrCargoFlight"
   },
   {
     "id": "date-of-arrival",
@@ -70,6 +147,13 @@
     "name": "DateOfDeparture"
   },
   {
+    "id": "end-of-monitoring",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/end-of-monitoring",
+    "version": "1.0.0",
+    "name": "EndOfMonitoring"
+  },
+  {
     "id": "enrolled-patient",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/enrolled-patient",
@@ -77,11 +161,39 @@
     "name": "EnrolledPatient"
   },
   {
+    "id": "expected-purge-date",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/expected-purge-date",
+    "version": "1.0.0",
+    "name": "ExpectedPurgeDate"
+  },
+  {
     "id": "exposure-notes",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/exposure-notes",
     "version": "1.0.0",
     "name": "ExposureNotes"
+  },
+  {
+    "id": "exposure-risk-assessment",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/exposure-risk-assessment",
+    "version": "1.0.0",
+    "name": "ExposureRiskAssessment"
+  },
+  {
+    "id": "exposure-risk-factors",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/exposure-risk-factors",
+    "version": "1.0.0",
+    "name": "ExposureRiskFactors"
+  },
+  {
+    "id": "extended-isolation",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/extended-isolation",
+    "version": "1.0.0",
+    "name": "ExtendedIsolation"
   },
   {
     "id": "flight-or-vessel-carrier",
@@ -98,11 +210,39 @@
     "name": "FlightOrVesselNumber"
   },
   {
+    "id": "follow-up-note",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/follow-up-note",
+    "version": "1.0.0",
+    "name": "FollowUpNote"
+  },
+  {
+    "id": "follow-up-reason",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/follow-up-reason",
+    "version": "1.0.0",
+    "name": "FollowUpReason"
+  },
+  {
     "id": "full-assigned-jurisdiction-path",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/full-assigned-jurisdiction-path",
     "version": "1.0.0",
     "name": "FullAssignedJurisdictionPath"
+  },
+  {
+    "id": "head-of-household",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/head-of-household",
+    "version": "1.0.0",
+    "name": "HeadOfHousehold"
+  },
+  {
+    "id": "healthcare-personnel",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/healthcare-personnel",
+    "version": "1.0.0",
+    "name": "HealthcarePersonnel"
   },
   {
     "id": "history-type",
@@ -112,6 +252,13 @@
     "name": "HistoryType"
   },
   {
+    "id": "id-of-reporter",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/id-of-reporter",
+    "version": "1.0.0",
+    "name": "IDOfReporter"
+  },
+  {
     "id": "isolation",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/isolation",
@@ -119,11 +266,32 @@
     "name": "Isolation"
   },
   {
+    "id": "laboratory-personnel",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/laboratory-personnel",
+    "version": "1.0.0",
+    "name": "LaboratoryPersonnel"
+  },
+  {
+    "id": "last-assessment-reminder-sent",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/last-assessment-reminder-sent",
+    "version": "1.0.0",
+    "name": "LastAssessmentReminderSent"
+  },
+  {
     "id": "last-date-of-exposure",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/last-date-of-exposure",
     "version": "1.0.0",
     "name": "LastDateOfExposure"
+  },
+  {
+    "id": "member-of-a-common-exposure-cohort",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/member-of-a-common-exposure-cohort",
+    "version": "1.0.0",
+    "name": "MemberOfACommonExposureCohort"
   },
   {
     "id": "monitoring-plan",
@@ -140,6 +308,20 @@
     "name": "Notes"
   },
   {
+    "id": "original-id",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/original-id",
+    "version": "1.0.0",
+    "name": "OriginalID"
+  },
+  {
+    "id": "paused-notifications",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/paused-notifications",
+    "version": "1.0.0",
+    "name": "PausedNotifications"
+  },
+  {
     "id": "phone-type",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/phone-type",
@@ -147,11 +329,32 @@
     "name": "PhoneType"
   },
   {
+    "id": "port-of-entry-into-usa",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/port-of-entry-into-usa",
+    "version": "1.0.0",
+    "name": "PortOfEntryIntoUSA"
+  },
+  {
     "id": "port-of-origin",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/port-of-origin",
     "version": "1.0.0",
     "name": "PortOfOrigin"
+  },
+  {
+    "id": "potential-exposure-country",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/potential-exposure-country",
+    "version": "1.0.0",
+    "name": "PotentialExposureCountry"
+  },
+  {
+    "id": "potential-exposure-location",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/potential-exposure-location",
+    "version": "1.0.0",
+    "name": "PotentialExposureLocation"
   },
   {
     "id": "preferred-contact-method",
@@ -166,6 +369,20 @@
     "url": "http://saraalert.org/StructureDefinition/preferred-contact-time",
     "version": "1.0.0",
     "name": "PreferredContactTime"
+  },
+  {
+    "id": "public-health-action",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/public-health-action",
+    "version": "1.0.0",
+    "name": "PublicHealthAction"
+  },
+  {
+    "id": "reason-for-closure",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/reason-for-closure",
+    "version": "1.0.0",
+    "name": "ReasonForClosure"
   },
   {
     "id": "sara-alert-immunization",
@@ -210,6 +427,27 @@
     "name": "SaraAlertRelatedPerson"
   },
   {
+    "id": "sexual-orientation",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/sexual-orientation",
+    "version": "1.0.0",
+    "name": "SexualOrientation"
+  },
+  {
+    "id": "source-of-report",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/source-of-report",
+    "version": "1.0.0",
+    "name": "SourceOfReport"
+  },
+  {
+    "id": "status",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/status",
+    "version": "1.0.0",
+    "name": "Status"
+  },
+  {
     "id": "symptom-onset-date",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/symptom-onset-date",
@@ -217,11 +455,53 @@
     "name": "SymptomOnsetDate"
   },
   {
+    "id": "symptomatic",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/symptomatic",
+    "version": "1.0.0",
+    "name": "Symptomatic"
+  },
+  {
+    "id": "transfer",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/transfer",
+    "version": "1.0.0",
+    "name": "Transfer"
+  },
+  {
+    "id": "travel-from-affected-country-or-area",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/travel-from-affected-country-or-area",
+    "version": "1.0.0",
+    "name": "TravelFromAffectedCountryOrArea"
+  },
+  {
     "id": "travel-related-notes",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/travel-related-notes",
     "version": "1.0.0",
     "name": "TravelRelatedNotes"
+  },
+  {
+    "id": "user-defined-symptom-onset",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/user-defined-symptom-onset",
+    "version": "1.0.0",
+    "name": "UserDefinedSymptomOnset"
+  },
+  {
+    "id": "was-in-health-care-facility-with-known-cases",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/was-in-health-care-facility-with-known-cases",
+    "version": "1.0.0",
+    "name": "WasInHealthCareFacilityWithKnownCases"
+  },
+  {
+    "id": "who-reported",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/who-reported",
+    "version": "1.0.0",
+    "name": "WhoReported"
   },
   {
     "id": "SaraAlertLabResult",
@@ -243,6 +523,13 @@
     "url": "http://saraalert.org/ValueSet/SaraAlertLanguage",
     "version": "1.0.0",
     "name": "SaraAlertLanguage"
+  },
+  {
+    "id": "SaraAlertSexualOrientation",
+    "type": "ValueSet",
+    "url": "http://saraalert.org/ValueSet/SaraAlertSexualOrientation",
+    "version": "1.0.0",
+    "name": "SaraAlertSexualOrientation"
   },
   {
     "id": "covid-19-vaccines",
