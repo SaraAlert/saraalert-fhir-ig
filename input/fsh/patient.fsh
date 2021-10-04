@@ -59,7 +59,9 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * obeys sara-1
 * obeys sara-2
 * obeys sara-4
-* telecom.extension contains phone-type named phone-type 0..1 MS
+* telecom.extension contains
+  phone-type named phone-type 0..1 MS and
+  international-telephone named international-telephone 0..1 MS
 * active MS
 * name MS
 * telecom MS
@@ -166,42 +168,42 @@ Description: "Represents the date that the monitoree is planning to begin their 
 Extension: AdditionalPlannedTravelEndDate
 Id: additional-planned-travel-end-date
 Title: "Additional Planned Travel End Date"
-Description: "Represents the date that the monitoree is planning to end their additional travel. This field is read-only."
+Description: "Represents the date that the monitoree is planning to end their additional travel."
 * value[x] only date
 
 // Additional Planned Travel Destination
 Extension: AdditionalPlannedTravelDestination
 Id: additional-planned-travel-destination
 Title: "Additional Planned Travel Destination"
-Description: "Represents destination of the monitoree’s planned travel. This field is read-only."
+Description: "Represents destination of the monitoree’s planned travel."
 * value[x] only string
 
 // Additional Planned Travel Destination State
 Extension: AdditionalPlannedTravelDestinationState
 Id: additional-planned-travel-destination-state
 Title: "Additional Planned Travel Destination State"
-Description: "Represents destination state of the monitoree’s planned travel. This field is read-only."
+Description: "Represents destination state of the monitoree’s planned travel."
 * value[x] only string
 
 // Additional Planned Travel Destination Country
 Extension: AdditionalPlannedTravelDestinationCountry
 Id: additional-planned-travel-destination-country
 Title: "Additional Planned Travel Destination Country"
-Description: "Represents destination country of the monitoree’s planned travel. This field is read-only."
+Description: "Represents destination country of the monitoree’s planned travel."
 * value[x] only string
 
 // Additional Planned Travel Port of Departure
 Extension: AdditionalPlannedTravelPortOfDeparture
 Id: additional-planned-travel-port-of-departure
 Title: "Additional Planned Travel Port of Departure"
-Description: "Represents the airport, station, or docking point that the monitoree is planning to travel from. This field is read-only."
+Description: "Represents the airport, station, or docking point that the monitoree is planning to travel from."
 * value[x] only string
 
 // Additional Planned Travel Type
 Extension: AdditionalPlannedTravelType
 Id: additional-planned-travel-type
 Title: "Additional Planned Travel Type"
-Description: "Represents type of additional planned travel the monitoree has reported (options are: `Domestic` and `International`). This field is read-only."
+Description: "Represents type of additional planned travel the monitoree has reported (options are: `Domestic` and `International`)."
 * value[x] only string
 
 // Port of Origin
@@ -215,7 +217,7 @@ Description: "Represents the airport, station, or docking point that the monitor
 Extension: PortOfEntryIntoUSA
 Id: port-of-entry-into-usa
 Title: "Port of Entry into USA"
-Description: "Represents the U.S. airport, station, or docking point that the monitoree traveled to in order to enter the United States. This field is read-only."
+Description: "Represents the U.S. airport, station, or docking point that the monitoree traveled to in order to enter the United States."
 * value[x] only string
 
 // Date of Departure
@@ -274,11 +276,18 @@ Title: "Phone Type"
 Description: "Represents the type of phone attached to the phone number. This field can be used to determine a monitoree’s ability to receive SMS Texted Weblink, Telephone call, or SMS Text-message during the selection of Preferred Reporting Method (options are: `Smartphone`, `Landline`, `Plain Cell`)."
 * value[x] only string
 
+// International Telephone
+Extension: InternationalTelephone
+Id: international-telephone
+Title: "International Telephone"
+Description: "Indicates if a monitoree's telephone number is international. The extension only has meaning when used on the 'Patient.telecom' element. If this extension is not present the telecom is assumed not to be international."
+* value[x] only boolean
+
 // Address Type
 Extension: AddressType
 Id: address-type
 Title: "Address Type"
-Description: "Indicates if a monitoree's address is within the USA, or outside of the USA (options are: `USA` and `Foreign`). The extension only has meaning when used on the 'Patient.address' element. If this extension is not present the address is assumed to be within the USA."
+Description: "Indicates if a monitoree's address is within the USA, or outside of the USA (options are: `USA`, `Foreign`, `Monitored` and `ForeignMonitored`). The extension only has meaning when used on the 'Patient.address' element. If this extension is not present the address is assumed to be within the USA."
 * value[x] only string
 
 // Exposure Risk Assessment
@@ -362,7 +371,7 @@ Description: "Specifies additional details for the follow-up reason on the monit
 Extension: CaseStatus
 Id: case-status
 Title: "Case Status"
-Description: "Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`). This field is read-only."
+Description: "Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`)."
 * value[x] only string
 
 // Closed At
@@ -446,7 +455,7 @@ Description: "Represents a transfer event involving the monitoree. This field is
 Extension: ExposureRiskFactors
 Id: exposure-risk-factors
 Title: "Exposure Risk Factors"
-Description: "Represents the exposure risk factors for the monitoree. This field is read-only."
+Description: "Represents the exposure risk factors for the monitoree."
 * extension contains
   contact-of-known-case named contact-of-own-case 1..1 MS and
   was-in-health-care-facility-with-known-cases named was-in-health-care-facility-with-known-cases 1..1 MS and
@@ -460,7 +469,7 @@ Description: "Represents the exposure risk factors for the monitoree. This field
 Extension: ContactOfKnownCase
 Id: contact-of-known-case
 Title: "Contact Of Known Case"
-Description: "Represents whether or not a monitoree has known exposure to a probable or confirmed case. This field is read-only."
+Description: "Represents whether or not a monitoree has known exposure to a probable or confirmed case."
 * extension contains
   contact-of-known-case 1..1 MS and
   contact-of-known-case-id 0..1 MS
@@ -471,7 +480,7 @@ Description: "Represents whether or not a monitoree has known exposure to a prob
 Extension: WasInHealthCareFacilityWithKnownCases
 Id: was-in-health-care-facility-with-known-cases
 Title: "Was in Health Care Facility with Known Cases"
-Description: "Represents whether or not a monitoree entered or was treated in a health care facility that had known cases. This field is read-only."
+Description: "Represents whether or not a monitoree entered or was treated in a health care facility that had known cases."
 * extension contains
   was-in-health-care-facility-with-known-cases 1..1 MS and
   was-in-health-care-facility-with-known-cases-facility-name 0..1 MS
@@ -482,7 +491,7 @@ Description: "Represents whether or not a monitoree entered or was treated in a 
 Extension: LaboratoryPersonnel
 Id: laboratory-personnel
 Title: "Laboratory Personnel"
-Description: "Represents whether or not a monitoree works in a laboratory or testing facility. This field is read-only."
+Description: "Represents whether or not a monitoree works in a laboratory or testing facility."
 * extension contains
   laboratory-personnel 1..1 MS and
   laboratory-personnel-facility-name 0..1 MS
@@ -493,7 +502,7 @@ Description: "Represents whether or not a monitoree works in a laboratory or tes
 Extension: HealthcarePersonnel
 Id: healthcare-personnel
 Title: "Healthcare Personnel"
-Description: "Represents whether or not a monitoree works in a healthcare facility. This field is read-only."
+Description: "Represents whether or not a monitoree works in a healthcare facility."
 * extension contains
   healthcare-personnel 1..1 MS and
   healthcare-personnel-facility-name 0..1 MS
@@ -504,7 +513,7 @@ Description: "Represents whether or not a monitoree works in a healthcare facili
 Extension: MemberOfACommonExposureCohort
 Id: member-of-a-common-exposure-cohort
 Title: "Member of a Common Exposure Cohort"
-Description: "Represents whether or not a monitoree was exposed via a common source or gathering. This field is read-only."
+Description: "Represents whether or not a monitoree was exposed via a common source or gathering."
 * extension contains
   member-of-a-common-exposure-cohort 1..1 MS and
   member-of-a-common-exposure-cohort-type 0..1 MS
@@ -515,21 +524,21 @@ Description: "Represents whether or not a monitoree was exposed via a common sou
 Extension: TravelFromAffectedCountryOrArea
 Id: travel-from-affected-country-or-area
 Title: "Travel From Affected Country or Area"
-Description: "Represents whether or not a monitoree traveled from a country or area with a high prevalence of disease within the exposure period. This field is read-only."
+Description: "Represents whether or not a monitoree traveled from a country or area with a high prevalence of disease within the exposure period."
 * value[x] only boolean
 
 // Crew on Passenger or Cargo Flight
 Extension: CrewOnPassengerOrCargoFlight
 Id: crew-on-passenger-or-cargo-flight
 Title: "Crew on Passenger or Cargo Flight"
-Description: "Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane. This field is read-only."
+Description: "Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane."
 * value[x] only boolean
 
 // Source of Report
 Extension: SourceOfReport
 Id: source-of-report
 Title: "Source Of Report"
-Description: "Represents where initial information about the monitoree’s exposure or illness was obtained from. This field is read-only."
+Description: "Represents where initial information about the monitoree’s exposure or illness was obtained from."
 * extension contains
   source-of-report 1..1 MS and
   specify 0..1 MS
@@ -539,7 +548,7 @@ Description: "Represents where initial information about the monitoree’s expos
 Extension: SexualOrientation
 Id: sexual-orientation
 Title: "Sexual Orientation"
-Description: "Represents how the monitoree characterizes their attraction to others. This field is read-only."
+Description: "Represents how the monitoree characterizes their attraction to others."
 * value[x] only CodeableConcept
 * valueCodeableConcept from SaraAlertSexualOrientation (required)
 
