@@ -9,7 +9,7 @@
   <version value="1.0.0"/>
   <name value="SaraAlert"/>
   <status value="active"/>
-  <date value="2021-09-07T08:24:04-04:00"/>
+  <date value="2021-10-06T18:59:21-05:00"/>
   <publisher value="The MITRE Corporation"/>
   <contact>
     <name value="The MITRE Corporation"/>
@@ -261,7 +261,7 @@
         <reference value="StructureDefinition/additional-planned-travel-destination"/>
       </reference>
       <name value="Additional Planned Travel Destination"/>
-      <description value="Represents destination of the monitoree’s planned travel. This field is read-only."/>
+      <description value="Represents destination of the monitoree’s planned travel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -272,7 +272,7 @@
         <reference value="StructureDefinition/additional-planned-travel-destination-country"/>
       </reference>
       <name value="Additional Planned Travel Destination Country"/>
-      <description value="Represents destination country of the monitoree’s planned travel. This field is read-only."/>
+      <description value="Represents destination country of the monitoree’s planned travel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -283,7 +283,7 @@
         <reference value="StructureDefinition/additional-planned-travel-destination-state"/>
       </reference>
       <name value="Additional Planned Travel Destination State"/>
-      <description value="Represents destination state of the monitoree’s planned travel. This field is read-only."/>
+      <description value="Represents destination state of the monitoree’s planned travel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -294,7 +294,7 @@
         <reference value="StructureDefinition/additional-planned-travel-end-date"/>
       </reference>
       <name value="Additional Planned Travel End Date"/>
-      <description value="Represents the date that the monitoree is planning to end their additional travel. This field is read-only."/>
+      <description value="Represents the date that the monitoree is planning to end their additional travel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -316,7 +316,7 @@
         <reference value="StructureDefinition/additional-planned-travel-port-of-departure"/>
       </reference>
       <name value="Additional Planned Travel Port of Departure"/>
-      <description value="Represents the airport, station, or docking point that the monitoree is planning to travel from. This field is read-only."/>
+      <description value="Represents the airport, station, or docking point that the monitoree is planning to travel from."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -338,7 +338,7 @@
         <reference value="StructureDefinition/additional-planned-travel-type"/>
       </reference>
       <name value="Additional Planned Travel Type"/>
-      <description value="Represents type of additional planned travel the monitoree has reported (options are: `Domestic` and `International`). This field is read-only."/>
+      <description value="Represents type of additional planned travel the monitoree has reported (options are: `Domestic` and `International`)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -349,7 +349,7 @@
         <reference value="StructureDefinition/address-type"/>
       </reference>
       <name value="Address Type"/>
-      <description value="Indicates if a monitoree&#39;s address is within the USA, or outside of the USA (options are: `USA` and `Foreign`). The extension only has meaning when used on the &#39;Patient.address&#39; element. If this extension is not present the address is assumed to be within the USA."/>
+      <description value="Indicates if a monitoree&#39;s address is within the USA, or outside of the USA (options are: `USA`, `Foreign`, `Monitored` and `ForeignMonitored`). The extension only has meaning when used on the &#39;Patient.address&#39; element. If this extension is not present the address is assumed to be within the USA."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -371,7 +371,7 @@
         <reference value="StructureDefinition/case-status"/>
       </reference>
       <name value="Case Status"/>
-      <description value="Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`). This field is read-only."/>
+      <description value="Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -415,7 +415,7 @@
         <reference value="StructureDefinition/contact-of-known-case"/>
       </reference>
       <name value="Contact Of Known Case"/>
-      <description value="Represents whether or not a monitoree has known exposure to a probable or confirmed case. This field is read-only."/>
+      <description value="Represents whether or not a monitoree has known exposure to a probable or confirmed case."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -448,7 +448,7 @@
         <reference value="StructureDefinition/crew-on-passenger-or-cargo-flight"/>
       </reference>
       <name value="Crew on Passenger or Cargo Flight"/>
-      <description value="Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane. This field is read-only."/>
+      <description value="Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -536,7 +536,7 @@
         <reference value="StructureDefinition/exposure-risk-factors"/>
       </reference>
       <name value="Exposure Risk Factors"/>
-      <description value="Represents the exposure risk factors for the monitoree. This field is read-only."/>
+      <description value="Represents the exposure risk factors for the monitoree."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -624,7 +624,7 @@
         <reference value="StructureDefinition/healthcare-personnel"/>
       </reference>
       <name value="Healthcare Personnel"/>
-      <description value="Represents whether or not a monitoree works in a healthcare facility. This field is read-only."/>
+      <description value="Represents whether or not a monitoree works in a healthcare facility."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -654,6 +654,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/international-telephone"/>
+      </reference>
+      <name value="International Telephone"/>
+      <description value="Indicates if a monitoree&#39;s telephone number is international. The extension only has meaning when used on the &#39;Patient.telecom&#39; element. If this extension is not present the telecom is assumed not to be international."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/isolation"/>
       </reference>
       <name value="Isolation"/>
@@ -668,7 +679,7 @@
         <reference value="StructureDefinition/laboratory-personnel"/>
       </reference>
       <name value="Laboratory Personnel"/>
-      <description value="Represents whether or not a monitoree works in a laboratory or testing facility. This field is read-only."/>
+      <description value="Represents whether or not a monitoree works in a laboratory or testing facility."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -701,7 +712,7 @@
         <reference value="StructureDefinition/member-of-a-common-exposure-cohort"/>
       </reference>
       <name value="Member of a Common Exposure Cohort"/>
-      <description value="Represents whether or not a monitoree was exposed via a common source or gathering. This field is read-only."/>
+      <description value="Represents whether or not a monitoree was exposed via a common source or gathering."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -767,7 +778,7 @@
         <reference value="StructureDefinition/port-of-entry-into-usa"/>
       </reference>
       <name value="Port of Entry into USA"/>
-      <description value="Represents the U.S. airport, station, or docking point that the monitoree traveled to in order to enter the United States. This field is read-only."/>
+      <description value="Represents the U.S. airport, station, or docking point that the monitoree traveled to in order to enter the United States."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -855,7 +866,7 @@
         <reference value="StructureDefinition/sexual-orientation"/>
       </reference>
       <name value="Sexual Orientation"/>
-      <description value="Represents how the monitoree characterizes their attraction to others. This field is read-only."/>
+      <description value="Represents how the monitoree characterizes their attraction to others."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -866,7 +877,7 @@
         <reference value="StructureDefinition/source-of-report"/>
       </reference>
       <name value="Source Of Report"/>
-      <description value="Represents where initial information about the monitoree’s exposure or illness was obtained from. This field is read-only."/>
+      <description value="Represents where initial information about the monitoree’s exposure or illness was obtained from."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -921,7 +932,7 @@
         <reference value="StructureDefinition/travel-from-affected-country-or-area"/>
       </reference>
       <name value="Travel From Affected Country or Area"/>
-      <description value="Represents whether or not a monitoree traveled from a country or area with a high prevalence of disease within the exposure period. This field is read-only."/>
+      <description value="Represents whether or not a monitoree traveled from a country or area with a high prevalence of disease within the exposure period."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -954,7 +965,7 @@
         <reference value="StructureDefinition/was-in-health-care-facility-with-known-cases"/>
       </reference>
       <name value="Was in Health Care Facility with Known Cases"/>
-      <description value="Represents whether or not a monitoree entered or was treated in a health care facility that had known cases. This field is read-only."/>
+      <description value="Represents whether or not a monitoree entered or was treated in a health care facility that had known cases."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

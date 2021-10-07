@@ -259,6 +259,13 @@
     "name": "IDOfReporter"
   },
   {
+    "id": "international-telephone",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/international-telephone",
+    "version": "1.0.0",
+    "name": "InternationalTelephone"
+  },
+  {
     "id": "isolation",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/isolation",

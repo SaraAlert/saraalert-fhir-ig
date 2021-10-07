@@ -1,10 +1,9 @@
 ﻿SaraAlert : Validation Results
 =========================================
 
-err = 2, warn = 78, info = 0
-IG Publisher Version: 1.1.79
-Generated Tue Sep 07 08:24:50 EDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
-
+err = 2, warn = 79, info = 0
+IG Publisher Version: 1.1.81
+Generated Wed Oct 06 19:00:14 CDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.0.0 (canonical = http://saraalert.org)
  Build Errors : 1 / 4 / 0
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/ImplementationGuide-saraalert-fhir : 0 / 0 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-additional-planned-travel-destination : 0 / 1 / 1
@@ -43,6 +42,7 @@ Generated Tue Sep 07 08:24:50 EDT 2021. FHIR version 4.0.1 for saraalert-fhir#1.
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-healthcare-personnel : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-history-type : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-id-of-reporter : 0 / 1 / 1
+ /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-international-telephone : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-isolation : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-laboratory-personnel : 0 / 1 / 1
  /Users/nfreiter/dev/sara/saraalert-fhir-ig/fsh-generated/resources/StructureDefinition-last-assessment-reminder-sent : 0 / 1 / 1
@@ -163,6 +163,8 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/history-type'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-id-of-reporter.json ==
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/id-of-reporter'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-international-telephone.json ==
+WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/international-telephone'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-isolation.json ==
 WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefinition/isolation'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-laboratory-personnel.json ==
@@ -239,6 +241,6 @@ WARNING: StructureDefinition.where(url = 'http://saraalert.org/StructureDefiniti
 == fsh-generated/resources/ValueSet-SaraAlertLabType.json ==
 == fsh-generated/resources/ValueSet-SaraAlertLanguage.json ==
 WARNING: ValueSet/SaraAlertLanguage: ValueSet.compose[0].include[0].concept[62]: The code cnr is not valid in the system urn:ietf:bcp:47
-ERROR: ValueSet.where(id = 'SaraAlertLanguage'): Error from server: Access violation at address 0000000000E52A88 in module 'FHIRServer.exe'. Read of address 0000000000000028
+ERROR: ValueSet.where(id = 'SaraAlertLanguage'): Error from server: Access violation at address 0000000000E63828 in module 'FHIRServer.exe'. Read of address 0000000000000028
 == fsh-generated/resources/ValueSet-SaraAlertSexualOrientation.json ==
 == fsh-generated/resources/ValueSet-covid-19-vaccines.json ==

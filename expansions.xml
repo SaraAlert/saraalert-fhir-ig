@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f2156934-6777-43bf-8e8c-0a7be9f8c2a0"/>
+  <id value="cf4765a2-65fc-4675-a501-0e826060c009"/>
   <meta>
-    <lastUpdated value="2021-09-07T08:24:04.881-04:00"/>
+    <lastUpdated value="2021-10-06T18:59:21.561-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -19,7 +19,7 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
                 </li>
                 <li>SNOMED CT International edition 31-Jul 2021</li>
               </ul>
@@ -69,7 +69,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>other</td>
@@ -86,7 +86,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <version value="1.0.0"/>
         <name value="SaraAlertLabResult"/>
         <status value="active"/>
-        <date value="2021-09-07T08:24:04-04:00"/>
+        <date value="2021-10-06T18:59:21-05:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -96,8 +96,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:3a72aaf4-84e2-4849-a69c-396c144e53df"/>
-          <timestamp value="2021-09-07T08:24:21-04:00"/>
+          <identifier value="urn:uuid:9690c71e-d43d-4e73-84a4-3badc0ca39ea"/>
+          <timestamp value="2021-10-06T18:59:42-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -152,7 +152,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
                 </li>
                 <li>SNOMED CT International edition 31-Jul 2021</li>
               </ul>
@@ -202,7 +202,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>other</td>
@@ -215,7 +215,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>unknown</td>
@@ -229,7 +229,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-ASKU"> </a>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU">ASKU</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-ASKU">ASKU</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>asked but unknown</td>
@@ -242,7 +242,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <version value="1.0.0"/>
         <name value="SaraAlertSexualOrientation"/>
         <status value="active"/>
-        <date value="2021-09-07T08:24:04-04:00"/>
+        <date value="2021-10-06T18:59:21-05:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -252,8 +252,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:b9b4bb7d-75ce-4abb-b239-5f35c6b29734"/>
-          <timestamp value="2021-09-07T08:24:22-04:00"/>
+          <identifier value="urn:uuid:2a24f48d-624a-4ffb-8710-578ffe84e4cf"/>
+          <timestamp value="2021-10-06T18:59:43-05:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -319,7 +319,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <ul>
                 <li>Loinc v2.71</li>
                 <li>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -395,7 +395,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-OTH"> </a>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-OTH">OTH</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>other</td>
@@ -408,7 +408,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>unknown</td>
@@ -426,7 +426,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <version value="1.0.0"/>
         <name value="SaraAlertLabType"/>
         <status value="active"/>
-        <date value="2021-09-07T08:24:04-04:00"/>
+        <date value="2021-10-06T18:59:21-05:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -436,8 +436,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:d2326487-2167-46ac-bd80-683a584a795c"/>
-          <timestamp value="2021-09-07T08:24:25-04:00"/>
+          <identifier value="urn:uuid:5d95b7a8-86de-4350-a654-e1b3affef7df"/>
+          <timestamp value="2021-10-06T18:59:46-05:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -512,7 +512,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.0.0 (CodeSystem)</a>
                 </li>
                 <li>http://hl7.org/fhir/sid/cvx version 20210406</li>
               </ul>
@@ -559,7 +559,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>
-                  <a href="http://terminology.hl7.org/2.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                  <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>unknown</td>
@@ -578,7 +578,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="COVID19VaccinesValueSet"/>
         <title value="COVID-19 Vaccines Value Set"/>
         <status value="active"/>
-        <date value="2021-09-07T08:24:04-04:00"/>
+        <date value="2021-10-06T18:59:21-05:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -588,8 +588,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:068a2475-15b2-478d-9777-5b37914cd53f"/>
-          <timestamp value="2021-09-07T08:24:27-04:00"/>
+          <identifier value="urn:uuid:c94a942a-5a2c-47e0-a486-590a991dc224"/>
+          <timestamp value="2021-10-06T18:59:49-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

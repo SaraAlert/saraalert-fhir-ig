@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2021-09-07T08:24:04-04:00",
+  "date": "2021-10-06T18:59:21-05:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -394,7 +394,7 @@
           "reference": "StructureDefinition/additional-planned-travel-destination"
         },
         "name": "Additional Planned Travel Destination",
-        "description": "Represents destination of the monitoree’s planned travel. This field is read-only.",
+        "description": "Represents destination of the monitoree’s planned travel.",
         "exampleBoolean": false
       },
       {
@@ -408,7 +408,7 @@
           "reference": "StructureDefinition/additional-planned-travel-destination-country"
         },
         "name": "Additional Planned Travel Destination Country",
-        "description": "Represents destination country of the monitoree’s planned travel. This field is read-only.",
+        "description": "Represents destination country of the monitoree’s planned travel.",
         "exampleBoolean": false
       },
       {
@@ -422,7 +422,7 @@
           "reference": "StructureDefinition/additional-planned-travel-destination-state"
         },
         "name": "Additional Planned Travel Destination State",
-        "description": "Represents destination state of the monitoree’s planned travel. This field is read-only.",
+        "description": "Represents destination state of the monitoree’s planned travel.",
         "exampleBoolean": false
       },
       {
@@ -436,7 +436,7 @@
           "reference": "StructureDefinition/additional-planned-travel-end-date"
         },
         "name": "Additional Planned Travel End Date",
-        "description": "Represents the date that the monitoree is planning to end their additional travel. This field is read-only.",
+        "description": "Represents the date that the monitoree is planning to end their additional travel.",
         "exampleBoolean": false
       },
       {
@@ -464,7 +464,7 @@
           "reference": "StructureDefinition/additional-planned-travel-port-of-departure"
         },
         "name": "Additional Planned Travel Port of Departure",
-        "description": "Represents the airport, station, or docking point that the monitoree is planning to travel from. This field is read-only.",
+        "description": "Represents the airport, station, or docking point that the monitoree is planning to travel from.",
         "exampleBoolean": false
       },
       {
@@ -492,7 +492,7 @@
           "reference": "StructureDefinition/additional-planned-travel-type"
         },
         "name": "Additional Planned Travel Type",
-        "description": "Represents type of additional planned travel the monitoree has reported (options are: `Domestic` and `International`). This field is read-only.",
+        "description": "Represents type of additional planned travel the monitoree has reported (options are: `Domestic` and `International`).",
         "exampleBoolean": false
       },
       {
@@ -506,7 +506,7 @@
           "reference": "StructureDefinition/address-type"
         },
         "name": "Address Type",
-        "description": "Indicates if a monitoree's address is within the USA, or outside of the USA (options are: `USA` and `Foreign`). The extension only has meaning when used on the 'Patient.address' element. If this extension is not present the address is assumed to be within the USA.",
+        "description": "Indicates if a monitoree's address is within the USA, or outside of the USA (options are: `USA`, `Foreign`, `Monitored` and `ForeignMonitored`). The extension only has meaning when used on the 'Patient.address' element. If this extension is not present the address is assumed to be within the USA.",
         "exampleBoolean": false
       },
       {
@@ -534,7 +534,7 @@
           "reference": "StructureDefinition/case-status"
         },
         "name": "Case Status",
-        "description": "Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`). This field is read-only.",
+        "description": "Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`).",
         "exampleBoolean": false
       },
       {
@@ -590,7 +590,7 @@
           "reference": "StructureDefinition/contact-of-known-case"
         },
         "name": "Contact Of Known Case",
-        "description": "Represents whether or not a monitoree has known exposure to a probable or confirmed case. This field is read-only.",
+        "description": "Represents whether or not a monitoree has known exposure to a probable or confirmed case.",
         "exampleBoolean": false
       },
       {
@@ -632,7 +632,7 @@
           "reference": "StructureDefinition/crew-on-passenger-or-cargo-flight"
         },
         "name": "Crew on Passenger or Cargo Flight",
-        "description": "Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane. This field is read-only.",
+        "description": "Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane.",
         "exampleBoolean": false
       },
       {
@@ -744,7 +744,7 @@
           "reference": "StructureDefinition/exposure-risk-factors"
         },
         "name": "Exposure Risk Factors",
-        "description": "Represents the exposure risk factors for the monitoree. This field is read-only.",
+        "description": "Represents the exposure risk factors for the monitoree.",
         "exampleBoolean": false
       },
       {
@@ -856,7 +856,7 @@
           "reference": "StructureDefinition/healthcare-personnel"
         },
         "name": "Healthcare Personnel",
-        "description": "Represents whether or not a monitoree works in a healthcare facility. This field is read-only.",
+        "description": "Represents whether or not a monitoree works in a healthcare facility.",
         "exampleBoolean": false
       },
       {
@@ -895,6 +895,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/international-telephone"
+        },
+        "name": "International Telephone",
+        "description": "Indicates if a monitoree's telephone number is international. The extension only has meaning when used on the 'Patient.telecom' element. If this extension is not present the telecom is assumed not to be international.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/isolation"
         },
         "name": "Isolation",
@@ -912,7 +926,7 @@
           "reference": "StructureDefinition/laboratory-personnel"
         },
         "name": "Laboratory Personnel",
-        "description": "Represents whether or not a monitoree works in a laboratory or testing facility. This field is read-only.",
+        "description": "Represents whether or not a monitoree works in a laboratory or testing facility.",
         "exampleBoolean": false
       },
       {
@@ -954,7 +968,7 @@
           "reference": "StructureDefinition/member-of-a-common-exposure-cohort"
         },
         "name": "Member of a Common Exposure Cohort",
-        "description": "Represents whether or not a monitoree was exposed via a common source or gathering. This field is read-only.",
+        "description": "Represents whether or not a monitoree was exposed via a common source or gathering.",
         "exampleBoolean": false
       },
       {
@@ -1038,7 +1052,7 @@
           "reference": "StructureDefinition/port-of-entry-into-usa"
         },
         "name": "Port of Entry into USA",
-        "description": "Represents the U.S. airport, station, or docking point that the monitoree traveled to in order to enter the United States. This field is read-only.",
+        "description": "Represents the U.S. airport, station, or docking point that the monitoree traveled to in order to enter the United States.",
         "exampleBoolean": false
       },
       {
@@ -1150,7 +1164,7 @@
           "reference": "StructureDefinition/sexual-orientation"
         },
         "name": "Sexual Orientation",
-        "description": "Represents how the monitoree characterizes their attraction to others. This field is read-only.",
+        "description": "Represents how the monitoree characterizes their attraction to others.",
         "exampleBoolean": false
       },
       {
@@ -1164,7 +1178,7 @@
           "reference": "StructureDefinition/source-of-report"
         },
         "name": "Source Of Report",
-        "description": "Represents where initial information about the monitoree’s exposure or illness was obtained from. This field is read-only.",
+        "description": "Represents where initial information about the monitoree’s exposure or illness was obtained from.",
         "exampleBoolean": false
       },
       {
@@ -1234,7 +1248,7 @@
           "reference": "StructureDefinition/travel-from-affected-country-or-area"
         },
         "name": "Travel From Affected Country or Area",
-        "description": "Represents whether or not a monitoree traveled from a country or area with a high prevalence of disease within the exposure period. This field is read-only.",
+        "description": "Represents whether or not a monitoree traveled from a country or area with a high prevalence of disease within the exposure period.",
         "exampleBoolean": false
       },
       {
@@ -1276,7 +1290,7 @@
           "reference": "StructureDefinition/was-in-health-care-facility-with-known-cases"
         },
         "name": "Was in Health Care Facility with Known Cases",
-        "description": "Represents whether or not a monitoree entered or was treated in a health care facility that had known cases. This field is read-only.",
+        "description": "Represents whether or not a monitoree entered or was treated in a health care facility that had known cases.",
         "exampleBoolean": false
       },
       {
