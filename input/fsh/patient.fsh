@@ -463,7 +463,8 @@ Description: "Represents the exposure risk factors for the monitoree."
   healthcare-personnel named healthcare-personnel 1..1 MS and
   member-of-a-common-exposure-cohort named member-of-a-common-exposure-cohort 1..1 MS and
   travel-from-affected-country-or-area named travel-from-affected-country-or-area 1..1 MS and
-  crew-on-passenger-or-cargo-flight named crew-on-passenger-or-cargo-flight 1..1 MS
+  crew-on-passenger-or-cargo-flight named crew-on-passenger-or-cargo-flight 1..1 MS and
+  common-exposure-cohort named common-exposure-cohort 0..* MS
 
 // Contact Of Known Case
 Extension: ContactOfKnownCase
@@ -514,11 +515,7 @@ Extension: MemberOfACommonExposureCohort
 Id: member-of-a-common-exposure-cohort
 Title: "Member of a Common Exposure Cohort"
 Description: "Represents whether or not a monitoree was exposed via a common source or gathering."
-* extension contains
-  member-of-a-common-exposure-cohort 1..1 MS and
-  member-of-a-common-exposure-cohort-type 0..1 MS
-* extension[member-of-a-common-exposure-cohort].value[x] only boolean 
-* extension[member-of-a-common-exposure-cohort-type].value[x] only string
+* value[x] only boolean
 
 // Travel From Affected Country or Area
 Extension: TravelFromAffectedCountryOrArea
@@ -533,6 +530,19 @@ Id: crew-on-passenger-or-cargo-flight
 Title: "Crew on Passenger or Cargo Flight"
 Description: "Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane."
 * value[x] only boolean
+
+// Common Exposure Cohort
+Extension: CommonExposureCohort
+Id: common-exposure-cohort
+Title: "Common Exposure Cohort"
+Description: "Represents where common exposure cohorts for the monitoree."
+* extension contains
+  cohort-type 0..1 MS and
+  cohort-name 0..1 MS and
+  cohort-location 0..1 MS
+* extension[cohort-type].value[x] only string
+* extension[cohort-name].value[x] only string
+* extension[cohort-location].value[x] only string
 
 // Source of Report
 Extension: SourceOfReport
