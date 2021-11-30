@@ -10,6 +10,8 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * extension contains
   preferred-contact-method named preferred-contact-method 0..1 MS and
   preferred-contact-time named preferred-contact-time 0..1 MS and
+  alternate-preferred-contact-method named alternate-preferred-contact-method 0..1 MS and
+  alternate-preferred-contact-time named alternate-preferred-contact-time 0..1 MS and
   symptom-onset-date named symptom-onset-date 0..1 MS and
   last-date-of-exposure named last-date-of-exposure 0..1 MS and
   isolation named isolation 0..1 MS and
@@ -44,6 +46,10 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   expected-purge-date named expected-purge-date 0..1 MS and
   reason-for-closure named reason-for-closure 0..1 MS and
   case-status named case-status 0..1 MS and
+  contact-type named contact-type 0..1 MS and
+  contact-name named contact-name 0..1 MS and
+  alternate-contact-type named alternate-contact-type 0..1 MS and
+  alternate-contact-name named alternate-contact-name 0..1 MS and
   closed-at named closed-at 0..1 MS and
   $gender-identity named gender-identity 0..1 MS and
   sexual-orientation named sexual-orientation 0..1 MS and
@@ -61,7 +67,8 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * obeys sara-4
 * telecom.extension contains
   phone-type named phone-type 0..1 MS and
-  international-telephone named international-telephone 0..1 MS
+  international-telephone named international-telephone 0..1 MS and
+  alternate-contact named alternate-contact 0..1 MS
 * active MS
 * name MS
 * telecom MS
@@ -113,6 +120,20 @@ Extension: PreferredContactTime
 Id: preferred-contact-time
 Title: "Preferred Contact Time"
 Description: "Represents the time period that the system sends out symptom reports to a monitoree (options are: `Morning`, `Afternoon`, `Evening`)."
+* value[x] only string
+
+// Alternate Preferred Contact Method Extension
+Extension: AltermatePreferredContactMethod
+Id: alternate-preferred-contact-method
+Title: "Alternate Preferred Contact Method"
+Description: "Represents the preferred contact method for an alternate contact of the monitoree (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`)."
+* value[x] only string
+
+// Alternate Preferred Contact Time Extension
+Extension: AltermatePreferredContactTime
+Id: alternate-preferred-contact-time
+Title: "Alternate Preferred Contact Time"
+Description: "Represents the preferred contact time for an alternate contact of the monitoree (options are: `Morning`, `Afternoon`, `Evening`)."
 * value[x] only string
 
 // Symptom Onset Date Extension
@@ -283,6 +304,13 @@ Title: "International Telephone"
 Description: "Indicates if a monitoree's telephone number is international. The extension only has meaning when used on the 'Patient.telecom' element. If this extension is not present the telecom is assumed not to be international."
 * value[x] only boolean
 
+// Alternate Contact
+Extension: AlternateContact
+Id: alternate-contact
+Title: "Alternate Contact"
+Description: "Indicates if a monitoree's telecom is associated with an alternate contact. The extension only has meaning when used on the 'Patient.telecom' element. If this extension is not present the telecom is assumed not to be alternate."
+* value[x] only boolean
+
 // Address Type
 Extension: AddressType
 Id: address-type
@@ -372,6 +400,34 @@ Extension: CaseStatus
 Id: case-status
 Title: "Case Status"
 Description: "Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`)."
+* value[x] only string
+
+// Contact Type
+Extension: ContactType
+Id: contact-type
+Title: "Contact Type"
+Description: "Represents the contact type of a monitoree (options are: `Self`, `Parent/Guardian`, `Spouse/Partner`, `Caregiver`, `Healthcare Provider`, `Facility Representative`, `Group Home Manager/Administrator`, `Surrogate/Proxy`, `Other`, and `Unknown`)."
+* value[x] only string
+
+// Contact Name
+Extension: ContactName
+Id: contact-name
+Title: "Contact Name"
+Description: "Represents the contact name of a monitoree."
+* value[x] only string
+
+// Alternate Contact Type
+Extension: AlternateContactType
+Id: alternate-contact-type
+Title: "Alternate Contact Type"
+Description: "Represents the contact type of an alternate contact of the monitoree (options are: `Self`, `Parent/Guardian`, `Spouse/Partner`, `Caregiver`, `Healthcare Provider`, `Facility Representative`, `Group Home Manager/Administrator`, `Surrogate/Proxy`, `Other`, and `Unknown`)."
+* value[x] only string
+
+// Alternate Contact Name
+Extension: AlternateContactName
+Id: alternate-contact-name
+Title: "Alternate Contact Name"
+Description: "Represents the contact name of an alternate contact of the monitoree."
 * value[x] only string
 
 // Closed At
