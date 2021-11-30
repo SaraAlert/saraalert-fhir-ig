@@ -59,6 +59,8 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   paused-notifications named paused-notifications 0..1 MS and
   status named status 0..1 MS and
   user-defined-symptom-onset named user-defined-symptom-onset 0..1 MS and
+  contact-became-case-at named contact-became-case-at 0..1 MS and
+  enrolled-workflow named enrolled-workflow 0..1 MS and
   transfer named transfer 0..* MS and
   exposure-risk-factors named exposure-risk-factors 0..1 MS and
   source-of-report named source-of-report 0..1 MS
@@ -487,6 +489,20 @@ Id: user-defined-symptom-onset
 Title: "User Defined Symptom Onset"
 Description: "This field indicates if a user manually defined symptom onset for the monitoree. This field is read-only."
 * value[x] only boolean
+
+// Contact Became Case At
+Extension: ContactBecameCaseAt
+Id: contact-became-case-at
+Title: "Contact Became Case At"
+Description: "Represents the date on which the monitoree moved from the exposure workflow to the isolation workflow. This field is read-only."
+* value[x] only date
+
+// Enrolled Workflow
+Extension: EnrolledWorkflow
+Id: enrolled-workflow
+Title: "Enrolled Workflow"
+Description: "Represents the workflow that the monitoree was enrolled in. This field is read-only."
+* value[x] only string
 
 // Transfer
 Extension: Transfer
