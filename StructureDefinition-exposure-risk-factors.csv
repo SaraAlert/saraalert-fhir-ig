@@ -29,6 +29,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Extension.extension","crew-on-passenger-or-cargo-flight","","",1,1,"Y","","","Extension {[CanonicalType[http://saraalert.org/StructureDefinition/crew-on-passenger-or-cargo-flight]]} {[]}
 ","Crew on Passenger or Cargo Flight","Represents whether or not a monitoree works on a passenger, cargo, or other commercial plane.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Extension.extension","common-exposure-cohort","","",0,*,"Y","","","Extension {[CanonicalType[http://saraalert.org/StructureDefinition/common-exposure-cohort]]} {[]}
+","Common Exposure Cohort","Represents where common exposure cohorts for the monitoree.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://saraalert.org/StructureDefinition/exposure-risk-factors""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "Extension.value[x]","","","",0,0,"","","","base64Binary {[]} {[]}

@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "name": "SaraAlert",
   "status": "active",
-  "date": "2021-10-06T18:59:21-05:00",
+  "date": "2021-12-01T10:26:21-05:00",
   "publisher": "The MITRE Corporation",
   "contact": [
     {
@@ -563,6 +563,20 @@
         },
         "name": "Comment",
         "description": "Represents the comment for a monitoree history item.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/common-exposure-cohort"
+        },
+        "name": "Common Exposure Cohort",
+        "description": "Represents where common exposure cohorts for the monitoree.",
         "exampleBoolean": false
       },
       {

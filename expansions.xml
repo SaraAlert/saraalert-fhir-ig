@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cf4765a2-65fc-4675-a501-0e826060c009"/>
+  <id value="511ab771-5323-4aa8-9e15-0a5cc9f0b362"/>
   <meta>
-    <lastUpdated value="2021-10-06T18:59:21.561-05:00"/>
+    <lastUpdated value="2021-12-01T10:26:21.294-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -86,7 +86,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <version value="1.0.0"/>
         <name value="SaraAlertLabResult"/>
         <status value="active"/>
-        <date value="2021-10-06T18:59:21-05:00"/>
+        <date value="2021-12-01T10:26:21-05:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -96,8 +96,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:9690c71e-d43d-4e73-84a4-3badc0ca39ea"/>
-          <timestamp value="2021-10-06T18:59:42-05:00"/>
+          <identifier value="urn:uuid:88bda288-a55b-4963-8f6b-fd7ebff76361"/>
+          <timestamp value="2021-12-01T10:26:43-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -109,7 +109,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -242,7 +242,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <version value="1.0.0"/>
         <name value="SaraAlertSexualOrientation"/>
         <status value="active"/>
-        <date value="2021-10-06T18:59:21-05:00"/>
+        <date value="2021-12-01T10:26:21-05:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -252,8 +252,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:2a24f48d-624a-4ffb-8710-578ffe84e4cf"/>
-          <timestamp value="2021-10-06T18:59:43-05:00"/>
+          <identifier value="urn:uuid:ecc54193-ca1c-4233-927c-3e5b603d2029"/>
+          <timestamp value="2021-12-01T10:26:45-05:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -265,7 +265,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -426,7 +426,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <version value="1.0.0"/>
         <name value="SaraAlertLabType"/>
         <status value="active"/>
-        <date value="2021-10-06T18:59:21-05:00"/>
+        <date value="2021-12-01T10:26:21-05:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -436,8 +436,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:5d95b7a8-86de-4350-a654-e1b3affef7df"/>
-          <timestamp value="2021-10-06T18:59:46-05:00"/>
+          <identifier value="urn:uuid:702c4a00-b191-4dfc-b5ad-16a100c1792f"/>
+          <timestamp value="2021-12-01T10:26:49-05:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -449,7 +449,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://loinc.org|2.71"/>
+            <valueUri value="http://loinc.org|2.71"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -578,7 +578,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
         <name value="COVID19VaccinesValueSet"/>
         <title value="COVID-19 Vaccines Value Set"/>
         <status value="active"/>
-        <date value="2021-10-06T18:59:21-05:00"/>
+        <date value="2021-12-01T10:26:21-05:00"/>
         <publisher value="The MITRE Corporation"/>
         <contact>
           <name value="The MITRE Corporation"/>
@@ -588,8 +588,8 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:c94a942a-5a2c-47e0-a486-590a991dc224"/>
-          <timestamp value="2021-10-06T18:59:49-05:00"/>
+          <identifier value="urn:uuid:901be20a-36d4-4114-84d1-d811ed708b33"/>
+          <timestamp value="2021-12-01T10:26:50-05:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -601,7 +601,7 @@ With coded datatypes, this null flavor may only be used if the vocabulary bindin
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://hl7.org/fhir/sid/cvx|20210406"/>
+            <valueUri value="http://hl7.org/fhir/sid/cvx|20210406"/>
           </parameter>
           <parameter>
             <name value="version"/>

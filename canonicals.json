@@ -98,6 +98,13 @@
     "name": "Comment"
   },
   {
+    "id": "common-exposure-cohort",
+    "type": "StructureDefinition",
+    "url": "http://saraalert.org/StructureDefinition/common-exposure-cohort",
+    "version": "1.0.0",
+    "name": "CommonExposureCohort"
+  },
+  {
     "id": "contact-attempts",
     "type": "StructureDefinition",
     "url": "http://saraalert.org/StructureDefinition/contact-attempts",
