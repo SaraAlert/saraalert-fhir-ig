@@ -46,10 +46,6 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   expected-purge-date named expected-purge-date 0..1 MS and
   reason-for-closure named reason-for-closure 0..1 MS and
   case-status named case-status 0..1 MS and
-  contact-type named contact-type 0..1 MS and
-  contact-name named contact-name 0..1 MS and
-  alternate-contact-type named alternate-contact-type 0..1 MS and
-  alternate-contact-name named alternate-contact-name 0..1 MS and
   closed-at named closed-at 0..1 MS and
   $gender-identity named gender-identity 0..1 MS and
   sexual-orientation named sexual-orientation 0..1 MS and
@@ -69,8 +65,12 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * obeys sara-4
 * telecom.extension contains
   phone-type named phone-type 0..1 MS and
-  international-telephone named international-telephone 0..1 MS and
-  alternate-contact named alternate-contact 0..1 MS
+  international-telephone named international-telephone 0..1 MS
+* contact
+  * extension contains alternate-contact named alternate-contact 0..1 MS
+  * telecom.extension contains
+    phone-type named phone-type 0..1 MS and
+    international-telephone named international-telephone 0..1 MS
 * active MS
 * name MS
 * telecom MS
@@ -310,7 +310,7 @@ Description: "Indicates if a monitoree's telephone number is international. The 
 Extension: AlternateContact
 Id: alternate-contact
 Title: "Alternate Contact"
-Description: "Indicates if a monitoree's telecom is associated with an alternate contact. The extension only has meaning when used on the 'Patient.telecom' element. If this extension is not present the telecom is assumed not to be alternate."
+Description: "Indicates if a monitoree's telecom is associated with an alternate contact. The extension only has meaning when used on the 'Patient.contact' element. If this extension is not present the contact is assumed not to be alternate."
 * value[x] only boolean
 
 // Address Type
@@ -402,34 +402,6 @@ Extension: CaseStatus
 Id: case-status
 Title: "Case Status"
 Description: "Represents if a monitoree meets a case definition (options are: `Confirmed`, `Probable`, `Suspect`, `Unknown`, and `Not a Case`)."
-* value[x] only string
-
-// Contact Type
-Extension: ContactType
-Id: contact-type
-Title: "Contact Type"
-Description: "Represents the contact type of a monitoree (options are: `Self`, `Parent/Guardian`, `Spouse/Partner`, `Caregiver`, `Healthcare Provider`, `Facility Representative`, `Group Home Manager/Administrator`, `Surrogate/Proxy`, `Other`, and `Unknown`)."
-* value[x] only string
-
-// Contact Name
-Extension: ContactName
-Id: contact-name
-Title: "Contact Name"
-Description: "Represents the contact name of a monitoree."
-* value[x] only string
-
-// Alternate Contact Type
-Extension: AlternateContactType
-Id: alternate-contact-type
-Title: "Alternate Contact Type"
-Description: "Represents the contact type of an alternate contact of the monitoree (options are: `Self`, `Parent/Guardian`, `Spouse/Partner`, `Caregiver`, `Healthcare Provider`, `Facility Representative`, `Group Home Manager/Administrator`, `Surrogate/Proxy`, `Other`, and `Unknown`)."
-* value[x] only string
-
-// Alternate Contact Name
-Extension: AlternateContactName
-Id: alternate-contact-name
-Title: "Alternate Contact Name"
-Description: "Represents the contact name of an alternate contact of the monitoree."
 * value[x] only string
 
 // Closed At
