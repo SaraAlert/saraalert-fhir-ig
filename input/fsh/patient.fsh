@@ -10,6 +10,8 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * extension contains
   preferred-contact-method named preferred-contact-method 0..1 MS and
   preferred-contact-time named preferred-contact-time 0..1 MS and
+  alternate-preferred-contact-method named alternate-preferred-contact-method 0..1 MS and
+  alternate-preferred-contact-time named alternate-preferred-contact-time 0..1 MS and
   symptom-onset-date named symptom-onset-date 0..1 MS and
   last-date-of-exposure named last-date-of-exposure 0..1 MS and
   isolation named isolation 0..1 MS and
@@ -53,6 +55,8 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
   paused-notifications named paused-notifications 0..1 MS and
   status named status 0..1 MS and
   user-defined-symptom-onset named user-defined-symptom-onset 0..1 MS and
+  contact-became-case-at named contact-became-case-at 0..1 MS and
+  enrolled-workflow named enrolled-workflow 0..1 MS and
   transfer named transfer 0..* MS and
   exposure-risk-factors named exposure-risk-factors 0..1 MS and
   source-of-report named source-of-report 0..1 MS
@@ -62,6 +66,11 @@ Description: "Sara Alert outputs additional extensions on Patient resources"
 * telecom.extension contains
   phone-type named phone-type 0..1 MS and
   international-telephone named international-telephone 0..1 MS
+* contact
+  * extension contains alternate-contact named alternate-contact 0..1 MS
+  * telecom.extension contains
+    phone-type named phone-type 0..1 MS and
+    international-telephone named international-telephone 0..1 MS
 * active MS
 * name MS
 * telecom MS
@@ -113,6 +122,20 @@ Extension: PreferredContactTime
 Id: preferred-contact-time
 Title: "Preferred Contact Time"
 Description: "Represents the time period that the system sends out symptom reports to a monitoree (options are: `Morning`, `Afternoon`, `Evening`)."
+* value[x] only string
+
+// Alternate Preferred Contact Method Extension
+Extension: AltermatePreferredContactMethod
+Id: alternate-preferred-contact-method
+Title: "Alternate Preferred Contact Method"
+Description: "Represents the preferred contact method for an alternate contact of the monitoree (options are: `E-mailed Web Link`, `SMS Texted Weblink`, `Telephone call`, and `SMS Text-message`)."
+* value[x] only string
+
+// Alternate Preferred Contact Time Extension
+Extension: AltermatePreferredContactTime
+Id: alternate-preferred-contact-time
+Title: "Alternate Preferred Contact Time"
+Description: "Represents the preferred contact time for an alternate contact of the monitoree (options are: `Morning`, `Afternoon`, `Evening`)."
 * value[x] only string
 
 // Symptom Onset Date Extension
@@ -283,6 +306,13 @@ Title: "International Telephone"
 Description: "Indicates if a monitoree's telephone number is international. The extension only has meaning when used on the 'Patient.telecom' element. If this extension is not present the telecom is assumed not to be international."
 * value[x] only boolean
 
+// Alternate Contact
+Extension: AlternateContact
+Id: alternate-contact
+Title: "Alternate Contact"
+Description: "Indicates if a monitoree's telecom is associated with an alternate contact. The extension only has meaning when used on the 'Patient.contact' element. If this extension is not present the contact is assumed not to be alternate."
+* value[x] only boolean
+
 // Address Type
 Extension: AddressType
 Id: address-type
@@ -431,6 +461,20 @@ Id: user-defined-symptom-onset
 Title: "User Defined Symptom Onset"
 Description: "This field indicates if a user manually defined symptom onset for the monitoree. This field is read-only."
 * value[x] only boolean
+
+// Contact Became Case At
+Extension: ContactBecameCaseAt
+Id: contact-became-case-at
+Title: "Contact Became Case At"
+Description: "Represents the date on which the monitoree moved from the exposure workflow to the isolation workflow. This field is read-only."
+* value[x] only date
+
+// Enrolled Workflow
+Extension: EnrolledWorkflow
+Id: enrolled-workflow
+Title: "Enrolled Workflow"
+Description: "Represents the workflow that the monitoree was enrolled in. This field is read-only."
+* value[x] only string
 
 // Transfer
 Extension: Transfer
